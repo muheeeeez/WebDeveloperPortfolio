@@ -3,23 +3,42 @@
     <div class="logo"><img src="../img/logo.png" alt="logo" /></div>
     <div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Tech Stack</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><router-link to="/home">Home</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/home#tech-stack">Tech Stacks</router-link></li>
+        <li><router-link to="/project-list">Projects</router-link></li>
+        <li><router-link to="/home#contact">Contact</router-link></li>
+        <button class="show" @click="downloadResume">Download Resume</button>
       </ul>
     </div>
     <div class="social-icons">
-      <img src="../img/github-icon.png" alt="github-icon" />
-      <img src="../img/twitter-icon.png" alt="twitter-icon" />
-      <img src="../img/linkedin-icon.png" alt="linkedin-icon" />
+      <a href="https://github.com/muheeeeez"
+        ><img src="../img/github-icon.png" alt=""
+      /></a>
+      <a href="https://twitter.com/IAmMuizOlaleye"
+        ><img src="../img/twitter-icon.png" alt=""
+      /></a>
+      <a href="https://www.linkedin.com/in/abdul-muiz-olaleye/"
+        ><img src="../img/linkedin-icon.png" alt=""
+      /></a>
     </div>
   </nav>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    downloadResume() {
+      var pdfUrl = "/src/resume/Abdul-muiz Olaleye.pdf";
+      var link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "Abdul-muiz Olaleye resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -59,5 +78,28 @@ export default {};
   display: flex;
   align-items: center;
   gap: 50px;
+}
+.show {
+  background-color: #363636;
+  border-radius: 10px;
+  border: #d7ffe0;
+  color: #fff;
+  width: 214px;
+  height: 54px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+.show:hover {
+  background: transparent;
+  border: 1px solid #363636;
+}
+.show a {
+  text-decoration: none;
+  color: #fff;
 }
 </style>

@@ -15,82 +15,101 @@
       </div>
       <div><img src="../img/moi.jpg" alt="" /></div>
     </div>
-    <div class="tech-stack">
+    <div class="tech-stack" id="tech-stack">
       <h1>My Tech Stack</h1>
       <p>Technologies I've been working with recently</p>
       <div class="languages">
         <div class="row">
-          <img src="../img/logo/html-logo.png" alt="html" class="flex-item" />
-          <img src="../img/logo/css-logo.png" alt="css" class="flex-item" />
-          <img
-            src="../img/logo/js-logo.png"
-            alt="javascript"
-            class="flex-item"
-          />
+          <a href="https://www.w3schools.com/html/"
+            ><img src="../img/logo/html-logo.png" alt="html" class="flex-item"
+          /></a>
+          <a href="https://www.w3schools.com/css/"
+            ><img src="../img/logo/css-logo.png" alt="css" class="flex-item"
+          /></a>
 
-          <img
-            src="../img/logo/Vue-logo.png"
-            alt="vue.js"
-            style="width: 93.59px; height: 105px"
-            class="flex-item"
-          />
-          <img
-            src="../img/logo/Java-logo.png"
-            alt="java"
-            style="width: 93.59px; height: 150px"
-            class="flex-item"
-          />
-          <img
-            src="../img/logo/bootstrap-logo.png"
-            alt="Bootstrap"
-            class="flex-item"
-          />
-          <img
-            src="../img/logo/tailwind-logo.png"
-            alt="tailwind"
-            class="flex-item"
-          />
+          <a href="https://www.w3schools.com/js/"
+            ><img
+              src="../img/logo/js-logo.png"
+              alt="javascript"
+              class="flex-item"
+            />
+          </a>
+
+          <a href="https://vuejs.org/"
+            ><img
+              src="../img/logo/Vue-logo.png"
+              alt="vue.js"
+              style="width: 93.59px; height: 105px"
+              class="flex-item"
+          /></a>
+          <a href="https://www.java.com/en/">
+            <img
+              src="../img/logo/Java-logo.png"
+              alt="java"
+              style="width: 93.59px; height: 150px"
+              class="flex-item"
+          /></a>
+          <a href="https://getbootstrap.com/">
+            <img
+              src="../img/logo/bootstrap-logo.png"
+              alt="Bootstrap"
+              class="flex-item"
+          /></a>
+          <a href="https://tailwindcss.com/">
+            <img
+              src="../img/logo/tailwind-logo.png"
+              alt="tailwind"
+              class="flex-item"
+          /></a>
         </div>
         <div class="row">
-          <img src="../img/logo/sass-logo.png" alt="sass" class="flex-item" />
-          <img src="../img/logo/git-logo.png" alt="git" class="flex-item" />
-          <img
-            src="../img/logo/github-logo.png"
-            alt="github"
-            class="flex-item"
-          />
-          <img
-            src="../img/logo/vscode-logo.png"
-            alt="vscode"
-            class="flex-item"
-          />
+          <a href="https://sass-lang.com/"
+            ><img src="../img/logo/sass-logo.png" alt="sass" class="flex-item"
+          /></a>
+          <a href="https://git-scm.com/"
+            ><img src="../img/logo/git-logo.png" alt="git" class="flex-item"
+          /></a>
+          <a href="https://github.com/muheeeeez"
+            ><img
+              src="../img/logo/github-logo.png"
+              alt="github"
+              class="flex-item"
+          /></a>
+          <a href="https://code.visualstudio.com/"
+            ><img
+              src="../img/logo/vscode-logo.png"
+              alt="vscode"
+              class="flex-item"
+          /></a>
 
-          <img
-            src="../img/logo/mysql-logo.png"
-            alt="mysql"
-            style="width: 93.59px; height: 105px"
-            class="flex-item"
-          />
-          <img
-            src="../img/logo/postgres-logo.png"
-            alt="postgres"
-            style="width: 93.59px; height: 105px"
-            class="flex-item"
-          />
-          <img
-            src="../img/logo/eclipse-logo.png"
-            alt="eclipse"
-            style="width: 93.59px; height: 105px"
-            class="flex-item"
-          />
+          <a href="https://www.mysql.com/"
+            ><img
+              src="../img/logo/mysql-logo.png"
+              alt="mysql"
+              style="width: 93.59px; height: 105px"
+              class="flex-item"
+          /></a>
+          <a href="https://www.postgresql.org/"
+            ><img
+              src="../img/logo/postgres-logo.png"
+              alt="postgres"
+              style="width: 93.59px; height: 105px"
+              class="flex-item"
+          /></a>
+          <a href="https://eclipseide.org/"
+            ><img
+              src="../img/logo/eclipse-logo.png"
+              alt="eclipse"
+              style="width: 93.59px; height: 105px"
+              class="flex-item"
+          /></a>
         </div>
       </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
       <h1>Projects</h1>
       <p>Things I've built so far</p>
     </div>
-    div
     <div class="card-container">
       <div
         v-for="project in projectList"
@@ -159,6 +178,52 @@
         </div>
       </div>
     </div>
+    <div>
+      <button class="show">
+        <router-link to="/project-list">Show more</router-link>
+      </button>
+    </div>
+    <div class="contact" id="contact">
+      <div><img src="../img/logo.png" alt="" /></div>
+      <div class="contact-info">
+        <p>+1 753 886-1887</p>
+        <p>abdulmuiz.olatunbosun@gmail.com</p>
+        <button class="download" @click="downloadResume">
+          Download Resume
+        </button>
+        <div class="contact-social-media">
+          <a href="https://github.com/muheeeeez"
+            ><img src="../img/github-icon.png" alt=""
+          /></a>
+          <a href="https://twitter.com/IAmMuizOlaleye"
+            ><img src="../img/twitter-icon.png" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/in/abdul-muiz-olaleye/"
+            ><img src="../img/linkedin-icon.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <hr />
+    </div>
+    <div class="footer">
+      <div class="navbar">
+        <ul>
+          <li><router-link to="/home">Home</router-link></li>
+          <li><router-link to="/about">About</router-link></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><router-link to="/project-list">Projects</router-link></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <p>
+          Designed and built by <span>Abdul-muiz Olaleye</span> with
+          <span>Love </span>& <span>Coffee</span>
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -166,8 +231,8 @@
 import BlockchainImage from "../img/blockchain.png";
 import TullipsImage from "../img/tullips.png";
 import HelpMeOutDashboard from "../img/help3.png";
-import HelpMeOut from "../img/help2.png";
-import HelpMeOutLandingPage from "../img/help1.png";
+import HelpMeOutLandingPage from "../img/help2.png";
+import HelpMeOut from "../img/help1.png";
 import Intelli from "../img/intelli.png";
 export default {
   data() {
@@ -177,53 +242,70 @@ export default {
           id: "p1",
           projectImage: BlockchainImage,
           projectName: "Blockchain",
-          projectDescription: "Blockchain design projects",
-          projectLink: "www.google.com",
-          projectCodeLink: "https://github.com/",
+          projectDescription:
+            "Explore the transformative power of blockchain technology, unveiling fundamental principles, real-world applications, and investment prospects in an innovative ecosystem.",
+          projectLink: "https://artnftblockchain.netlify.app/",
+          projectCodeLink: "https://github.com/muheeeeez/Blockchain",
         },
         {
           id: "p2",
           projectImage: TullipsImage,
-          projectName: "Blockchain",
-          projectDescription: "Blockchain design projects",
-
-          projectLink: "www.google.com",
-          projectCodeLink: "https://github.com/",
+          projectName: "Tulips",
+          projectDescription:
+            "The Tullips platform empowers designers and developers with resources for inspiration and creation, bridging the gap between creativity and innovation.",
+          projectLink: "https://tullipsweb.netlify.app/",
+          projectCodeLink: "https://github.com/muheeeeez/Tulllips-Website",
         },
         {
           id: "p3",
           projectImage: HelpMeOutDashboard,
-          projectName: "Blockchain",
-          projectDescription: "Blockchain design projects",
-          projectLink: "www.google.com",
-          projectCodeLink: "https://github.com/",
+          projectName: "HelpMeOut",
+          projectDescription:
+            "HelpMeOut is a user-friendly web application that simplifies screen recording and sharing for educational and collaborative purposes.",
+          projectLink: "https://helpmeoutpage.netlify.app/",
+          projectCodeLink:
+            "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutWebsite",
         },
         {
-          id: "p3",
+          id: "p4",
           projectImage: HelpMeOut,
-          projectName: "Blockchain",
-          projectDescription: "Blockchain design projects",
-          projectLink: "www.google.com",
-          projectCodeLink: "https://github.com/",
+          projectName: "HelpMeOut",
+          projectDescription: "HelpMeOut user's dashboard",
+          projectLink: "https://helpmeoutrecordedpage.netlify.app/",
+          projectCodeLink:
+            "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutRecordings",
         },
         {
-          id: "p3",
+          id: "p5",
           projectImage: HelpMeOutLandingPage,
-          projectName: "Blockchain",
-          projectDescription: "Blockchain design projects",
-          projectLink: "www.google.com",
-          projectCodeLink: "https://github.com/",
+          projectName: "HelpMeOut",
+          projectDescription: "HelpMeOut authentication page",
+          projectLink: "https://helpmeoutsignuppage.netlify.app/",
+          projectCodeLink:
+            "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutLoginPage",
         },
         {
-          id: "p3",
+          id: "p6",
           projectImage: Intelli,
-          projectName: "Blockchain",
-          projectDescription: "Blockchain design projects",
-          projectLink: "www.google.com",
-          projectCodeLink: "https://github.com/",
+          projectName: "Intelli",
+          projectDescription:
+            "This Vue.js project implements user authentication functionalities, including sign-in, sign-up, password reset, and email update, utilizing Firebase integration for seamless user management.",
+          projectLink: "https://intelii.netlify.app/",
+          projectCodeLink: "https://github.com/muheeeeez/IntelliLandingPage",
         },
       ],
     };
+  },
+  methods: {
+    downloadResume() {
+      var pdfUrl = "/src/resume/Abdul-muiz Olaleye.pdf";
+      var link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "Abdul-muiz Olaleye resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    },
   },
 };
 </script>
@@ -295,26 +377,25 @@ export default {
   color: #fff;
 }
 .card-container {
-  width:70% ;
+  width: 70%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 70px;
   color: #cccc;
-
 }
 
 .project-list {
   margin: 0 auto;
   width: 373px;
-  height: 467px;
+  height: 587px;
   border-radius: 12px;
   border: 1px solid #363636;
   background-color: #282727;
   transition: transform 0.2s ease-in;
 }
-.project-list:hover{
+.project-list:hover {
   transform: translateY(-25px);
 }
 .card-image {
@@ -330,7 +411,7 @@ export default {
 }
 .card-text {
   font-size: 18px;
-  width: 314px;
+  width: 354px;
   text-align: center;
 }
 .card-details {
@@ -348,5 +429,92 @@ export default {
 .card-link a {
   text-decoration: none;
   color: #ccc;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  margin-top: 200px;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+  font-size: 25px;
+}
+.contact-social-media img {
+  margin: 20px;
+}
+hr {
+  color: #ffff;
+  width: 80%;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffff;
+  margin: 70px 0px;
+  background-color: #000;
+  font-size: 22px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 65px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffff;
+}
+.footer-info span {
+  font-size: 22px;
+  background: linear-gradient(to right, #e70faa, #00c0fd);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 0px;
+}
+.show {
+  background-color: #363636;
+  border-radius: 10px;
+  border: #d7ffe0;
+  width: 394px;
+  height: 54px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0px auto;
+  font-size: 20px;
+  cursor: pointer;
+}
+.show:hover {
+  background: transparent;
+  border: 1px solid #363636;
+}
+.show a {
+  text-decoration: none;
+  color: #fff;
+}
+.download {
+  background-color: #363636;
+  border-radius: 10px;
+  border: #d7ffe0;
+  color: #fff;
+  width: 214px;
+  height: 54px;
+  font-size: 12px;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+.download:hover {
+  background: transparent;
+  border: 1px solid #363636;
+}
+.download a {
+  text-decoration: none;
+  color: #fff;
 }
 </style>

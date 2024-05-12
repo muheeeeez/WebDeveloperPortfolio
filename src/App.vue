@@ -1,11 +1,12 @@
 <template>
-  <dashboard-overview></dashboard-overview>
+  <router-view></router-view>
 </template>
 
 <script>
 import DashboardOverview from "./components/DashboardOverview.vue";
+import NavigationBar from "./components/NavigationBar.vue";
 export default {
-  components: { DashboardOverview },
+  components: { DashboardOverview, NavigationBar },
 };
 </script>
 
@@ -19,5 +20,6 @@ body {
   left: 0;
   margin: 0;
   padding: 0;
+  background-color: #000;
 }
 </style>
