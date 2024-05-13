@@ -2,6 +2,9 @@
   <nav class="navbar">
     <div class="logo"><img src="../img/logo.png" alt="logo" /></div>
     <div>
+      <div class="menu-bar">
+        <img src="../img/menu.png" alt="" />
+      </div>
       <ul class="nav-links">
         <li><router-link to="/home">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
@@ -102,4 +105,49 @@ export default {
   text-decoration: none;
   color: #fff;
 }
+/* .menu-bar {
+  display: none;
+} */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 50px;
+  }
+  /* .menu-bar {
+    display: inline-block;
+  } */
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    left: 80%;
+  }
+  .social-icons {
+    margin-top: 300px;
+    flex-direction: column;
+    position: absolute;
+    left: 80%;
+    gap: 20px;
+    padding: 0 50px;
+  }
+  .show {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+/* @media screen and (max-width: 480px) {
+  .navbar {
+    padding: 5px 20px;
+  }
+  .nav-links {
+    gap: 10px;
+  }
+  .social-icons {
+    gap: 10px;
+  }
+  .show {
+    width: 100px;
+    height: 30px;
+  }
+} */
 </style>

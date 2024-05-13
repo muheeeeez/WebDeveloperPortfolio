@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <navigation-bar></navigation-bar>
+    <!-- <navigation-bar></navigation-bar> -->
     <div class="about">
       <h1>About Me</h1>
       <p>
@@ -284,6 +284,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .we-title h1 {
   text-align: start;
@@ -306,5 +307,39 @@ hr {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+@media screen and (min-width: 100px) and (max-width: 1300px) {
+  .container {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  hr {
+    width: 100vw;
+    margin: 0;
+  }
+  .about  {
+    width: 100vw;
+  }
+  .about p {
+    width: 85vw;
+    text-align: start;
+  }
+  .we {
+    width: 100vw;
+  }
+  .we-title {
+    width: 80vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+  }
+  .we-info {
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
 }
 </style>

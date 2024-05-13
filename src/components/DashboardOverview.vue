@@ -1,9 +1,9 @@
 <template>
   <div class="dashboard">
     <div>
-      <navigation-bar></navigation-bar>
+      <!-- <navigation-bar></navigation-bar> -->
     </div>
-    <div class="about">
+    <div id="not-responsive" class="about">
       <div>
         <h1>
           Hi 👋, My name is
@@ -13,7 +13,19 @@
           I build things for web
         </h1>
       </div>
-      <div><img src="../img/moi.jpg" alt="" /></div>
+      <div class="myImage"><img src="../img/moi.jpg" alt="" /></div>
+    </div>
+    <div id="responsive" class="about">
+      <div class="myImage"><img src="../img/moi.jpg" alt="" /></div>
+      <div>
+        <h1>
+          Hi 👋, My name is
+          <div class="name" data-text="Abdul-muiz Olaleye">
+            Abdul-muiz Olaleye
+          </div>
+          I build things for web
+        </h1>
+      </div>
     </div>
     <div class="tech-stack" id="tech-stack">
       <h1>My Tech Stack</h1>
@@ -55,17 +67,17 @@
               alt="Bootstrap"
               class="flex-item"
           /></a>
-          <a href="https://tailwindcss.com/">
+          <!-- <a href="https://tailwindcss.com/">
             <img
               src="../img/logo/tailwind-logo.png"
               alt="tailwind"
               class="flex-item"
-          /></a>
+          /></a> -->
         </div>
         <div class="row">
-          <a href="https://sass-lang.com/"
+          <!-- <a href="https://sass-lang.com/"
             ><img src="../img/logo/sass-logo.png" alt="sass" class="flex-item"
-          /></a>
+          /></a> -->
           <a href="https://git-scm.com/"
             ><img src="../img/logo/git-logo.png" alt="git" class="flex-item"
           /></a>
@@ -184,7 +196,9 @@
       </button>
     </div>
     <div class="contact" id="contact">
-      <div><img src="../img/logo.png" alt="" /></div>
+      <h1 class="contact-name">Contact</h1>
+      <div class="contact-image"><img src="../img/logo.png" alt="" /></div>
+
       <div class="contact-info">
         <p>+1 753 886-1887</p>
         <p>abdulmuiz.olatunbosun@gmail.com</p>
@@ -314,8 +328,12 @@ export default {
 .dashboard {
   background-color: #000;
 }
+#responsive {
+  display: none;
+}
 .about {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 150px;
@@ -432,12 +450,15 @@ export default {
 }
 .contact {
   display: flex;
+
   justify-content: space-around;
   color: #fff;
+
   margin-top: 200px;
 }
 .contact-info {
   display: flex;
+
   justify-content: space-around;
   gap: 70px;
   font-size: 25px;
@@ -453,6 +474,7 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   color: #ffff;
   margin: 70px 0px;
   background-color: #000;
@@ -460,6 +482,7 @@ hr {
 }
 .navbar ul {
   display: flex;
+
   justify-content: space-around;
   list-style: none;
   gap: 65px;
@@ -516,5 +539,54 @@ hr {
 .download a {
   text-decoration: none;
   color: #fff;
+}
+.contact-name {
+  display: none;
+}
+@media screen and (min-width: 100px) and (max-width: 1300px) {
+  hr {
+    width: 100vw;
+  }
+  .myImage {
+    /* display: none; */
+  }
+  #not-responsive {
+    display: none;
+  }
+  #responsive {
+    display: block;
+  }
+  .about {
+    width: 100vw;
+    text-align: center;
+    /* height: 100vh; */
+  }
+  .about h1 {
+    width: 100vw;
+  }
+  .contact {
+    margin-top: 55px;
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+  .contact-name {
+    display: block;
+  }
+  .contact-info {
+    width: 100vw;
+    flex-wrap: wrap;
+    font-size: 20px;
+    gap: 25px;
+  }
+  .contact-image {
+    display: none;
+  }
+  .footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+  }
 }
 </style>
