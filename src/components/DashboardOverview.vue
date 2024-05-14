@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard">
     <div>
-      <!-- <navigation-bar></navigation-bar> -->
+      <navigation-bar></navigation-bar>
     </div>
     <div id="not-responsive" class="about">
       <div>
@@ -354,7 +354,7 @@ export default {
   text-shadow: 0 0 0px;
 }
 .about img {
-  width: 349px;
+  width: 329px;
   height: 349px;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to right, #e70faa, #00c0fd) border-box; /* Use #E70FAA and #00C0FD for the linear gradient */

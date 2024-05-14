@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <!-- <navigation-bar></navigation-bar> -->
+    <navigation-bar></navigation-bar>
     <div class="about">
       <h1>About Me</h1>
       <p>
@@ -320,6 +320,9 @@ hr {
   }
   .about  {
     width: 100vw;
+  }
+  .about h1{
+    padding-top: 45px;
   }
   .about p {
     width: 85vw;

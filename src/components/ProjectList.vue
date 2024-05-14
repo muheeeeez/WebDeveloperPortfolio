@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <navigation-bar></navigation-bar> -->
+    <navigation-bar></navigation-bar>
   </div>
   <div class="projects" id="projects">
     <h1>Projects</h1>
@@ -158,6 +158,7 @@ export default {
 .projects {
   color: #d9d9d9;
   text-align: center;
+  padding-top: 95px;
 }
 .projects h1 {
   font-size: 48px;
