@@ -13,10 +13,10 @@
           I build things for web
         </h1>
       </div>
-      <div class="myImage"><img src="../img/moi.jpg" alt="" /></div>
+      <div class="myImage"><img src="../img/moi.jpeg" alt="" /></div>
     </div>
     <div id="responsive" class="about">
-      <div class="myImage"><img src="../img/moi.jpg" alt="" /></div>
+      <div class="myImage"><img src="../img/moi.jpeg" alt="" /></div>
       <div>
         <h1>
           Hi 👋, My name is
@@ -354,11 +354,11 @@ export default {
   text-shadow: 0 0 0px;
 }
 .about img {
-  width: 329px;
-  height: 349px;
+  width: 319px;
+  height: 369px;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to right, #e70faa, #00c0fd) border-box; /* Use #E70FAA and #00C0FD for the linear gradient */
-  border-radius: 230px;
+  border-radius: 200px;
   border: 9px solid transparent;
 }
 .tech-stack,
