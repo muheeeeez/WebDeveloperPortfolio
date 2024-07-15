@@ -14,8 +14,8 @@
         <p class="card-text">{{ project.projectDescription }}</p>
         <div class="card-link">
           <div>
-            <a :href="project.projectLink"
-              ><svg
+            <a :href="project.projectLink" target="_blank">
+              <svg
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
@@ -37,12 +37,12 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              Live Preview</a
-            >
+              Live Preview
+            </a>
           </div>
           <div>
-            <a :href="project.projectCodeLink"
-              ><svg
+            <a :href="project.projectCodeLink" target="_blank">
+              <svg
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
@@ -63,8 +63,8 @@
                   </clipPath>
                 </defs>
               </svg>
-              View Code</a
-            >
+              View Code
+            </a>
           </div>
         </div>
       </div>
@@ -117,6 +117,7 @@ export default {
           projectImage: HelpMeOut,
           projectName: "HelpMeOut",
           projectDescription: "HelpMeOut user's dashboard",
+          projectLink: "https://helpmeout",
           projectLink: "https://helpmeoutrecordedpage.netlify.app/",
           projectCodeLink:
             "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutRecordings",
@@ -139,6 +140,7 @@ export default {
           projectLink: "https://intelii.netlify.app/",
           projectCodeLink: "https://github.com/muheeeeez/IntelliLandingPage",
         },
+
         {
           id: "p7",
           projectImage: DotNotation,
@@ -166,74 +168,64 @@ export default {
 .projects p {
   font-size: 32px;
 }
-.row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  margin-top: 50px;
-}
-.flex-item {
-  transition: transform 0.2s ease-in;
-}
-.flex-item:hover {
-  transform: translateY(-15px);
-}
-.project-list {
-  color: #fff;
-}
 .card-container {
-  width: 70%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 70px;
+  gap: 30px;
   color: #cccc;
 }
 .project-list {
-  margin: 0 auto;
-  width: 373px;
-  height: 587px;
+  width: 300px;
   border-radius: 12px;
   border: 1px solid #363636;
   background-color: #282727;
   transition: transform 0.2s ease-in;
+  overflow: hidden;
 }
 .project-list:hover {
-  transform: translateY(-25px);
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
 }
 .card-image {
-  width: 375px;
-  height: 250px;
-  border-radius: 12px;
-  border: 1px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.2s ease-in;
 }
-.card-title {
-  font-size: 28px;
-  text-align: center;
-  font-weight: 800;
-}
-.card-text {
-  font-size: 18px;
-  width: 354px;
-  text-align: center;
+.project-list:hover .card-image {
+  transform: scale(1.05);
 }
 .card-details {
-  top: 0;
-  left: 0;
-  /* margin-top: -40px; */
-  padding: 0;
-  /* border: 1px solid #cccc; */
+  padding: 20px;
+}
+.card-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 800;
+  margin: 10px 0;
+}
+.card-text {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .card-link {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #363636;
 }
 .card-link a {
   text-decoration: none;
   color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card-link a:hover {
+  color: #fff;
 }
 </style>

@@ -32,89 +32,85 @@
       <p>Technologies I've been working with recently</p>
       <div class="languages">
         <div class="row">
-          <a href="https://www.w3schools.com/html/"
-            ><img src="../img/logo/html-logo.png" alt="html" class="flex-item"
-          /></a>
-          <a href="https://www.w3schools.com/css/"
-            ><img src="../img/logo/css-logo.png" alt="css" class="flex-item"
-          /></a>
-
-          <a href="https://www.w3schools.com/js/"
-            ><img
+          <a href="https://www.w3schools.com/html/">
+            <img src="../img/logo/html-logo.png" alt="html" class="flex-item" />
+          </a>
+          <a href="https://www.w3schools.com/css/">
+            <img src="../img/logo/css-logo.png" alt="css" class="flex-item" />
+          </a>
+          <a href="https://www.w3schools.com/js/">
+            <img
               src="../img/logo/js-logo.png"
               alt="javascript"
               class="flex-item"
             />
           </a>
-
-          <a href="https://vuejs.org/"
-            ><img
+          <a href="https://vuejs.org/">
+            <img
               src="../img/logo/Vue-logo.png"
               alt="vue.js"
               style="width: 93.59px; height: 105px"
               class="flex-item"
-          /></a>
+            />
+          </a>
           <a href="https://www.java.com/en/">
             <img
               src="../img/logo/Java-logo.png"
               alt="java"
               style="width: 93.59px; height: 150px"
               class="flex-item"
-          /></a>
+            />
+          </a>
           <a href="https://getbootstrap.com/">
             <img
               src="../img/logo/bootstrap-logo.png"
               alt="Bootstrap"
               class="flex-item"
-          /></a>
-          <!-- <a href="https://tailwindcss.com/">
-            <img
-              src="../img/logo/tailwind-logo.png"
-              alt="tailwind"
-              class="flex-item"
-          /></a> -->
+            />
+          </a>
         </div>
         <div class="row">
-          <!-- <a href="https://sass-lang.com/"
-            ><img src="../img/logo/sass-logo.png" alt="sass" class="flex-item"
-          /></a> -->
-          <a href="https://git-scm.com/"
-            ><img src="../img/logo/git-logo.png" alt="git" class="flex-item"
-          /></a>
-          <a href="https://github.com/muheeeeez"
-            ><img
+          <a href="https://git-scm.com/">
+            <img src="../img/logo/git-logo.png" alt="git" class="flex-item" />
+          </a>
+          <a href="https://github.com/muheeeeez">
+            <img
               src="../img/logo/github-logo.png"
               alt="github"
               class="flex-item"
-          /></a>
-          <a href="https://code.visualstudio.com/"
-            ><img
+            />
+          </a>
+          <a href="https://code.visualstudio.com/">
+            <img
               src="../img/logo/vscode-logo.png"
               alt="vscode"
               class="flex-item"
-          /></a>
-
-          <a href="https://www.mysql.com/"
-            ><img
+            />
+          </a>
+          <a href="https://www.mysql.com/">
+            <img
               src="../img/logo/mysql-logo.png"
               alt="mysql"
               style="width: 93.59px; height: 105px"
               class="flex-item"
-          /></a>
-          <a href="https://www.postgresql.org/"
-            ><img
+            />
+          </a>
+          <a href="https://www.postgresql.org/">
+            <img
               src="../img/logo/postgres-logo.png"
               alt="postgres"
               style="width: 93.59px; height: 105px"
               class="flex-item"
-          /></a>
-          <a href="https://eclipseide.org/"
-            ><img
+            />
+          </a>
+          <a href="https://eclipseide.org/">
+            <img
               src="../img/logo/eclipse-logo.png"
               alt="eclipse"
               style="width: 93.59px; height: 105px"
               class="flex-item"
-          /></a>
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -134,8 +130,8 @@
           <p class="card-text">{{ project.projectDescription }}</p>
           <div class="card-link">
             <div>
-              <a :href="project.projectLink"
-                ><svg
+              <a :href="project.projectLink" target="_blank">
+                <svg
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -157,12 +153,12 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                Live Preview</a
-              >
+                Live Preview
+              </a>
             </div>
             <div>
-              <a :href="project.projectCodeLink"
-                ><svg
+              <a :href="project.projectCodeLink" target="_blank">
+                <svg
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -173,7 +169,8 @@
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
-                      d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                      d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.037
+              5 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
                       fill="white"
                     />
                   </g>
@@ -183,8 +180,8 @@
                     </clipPath>
                   </defs>
                 </svg>
-                View Code</a
-              >
+                View Code
+              </a>
             </div>
           </div>
         </div>
@@ -228,7 +225,7 @@
           <li><router-link to="/about">About</router-link></li>
           <li><a href="#tech-stack">Tech Stack</a></li>
           <li><router-link to="/project-list">Projects</router-link></li>
-          <li><a href="#contact">Contacts</a></li>
+          <li><router-link to="/contact">Contact</router-link></li>
         </ul>
       </div>
       <div class="footer-info">
@@ -357,7 +354,7 @@ export default {
   width: 319px;
   height: 369px;
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(to right, #e70faa, #00c0fd) border-box; /* Use #E70FAA and #00C0FD for the linear gradient */
+    linear-gradient(to right, #e70faa, #00c0fd) border-box;
   border-radius: 200px;
   border: 9px solid transparent;
 }
@@ -395,70 +392,70 @@ export default {
   color: #fff;
 }
 .card-container {
-  width: 70%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 70px;
+  gap: 30px;
   color: #cccc;
 }
-
 .project-list {
-  margin: 0 auto;
-  width: 373px;
-  height: 587px;
+  width: 300px;
   border-radius: 12px;
   border: 1px solid #363636;
   background-color: #282727;
   transition: transform 0.2s ease-in;
+  overflow: hidden;
 }
 .project-list:hover {
-  transform: translateY(-25px);
+  transform: translateY(-10px);
 }
 .card-image {
-  width: 375px;
-  height: 250px;
-  border-radius: 12px;
-  border: 1px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .card-title {
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
   font-weight: 800;
+  margin: 10px 0;
 }
 .card-text {
-  font-size: 18px;
-  width: 354px;
+  font-size: 16px;
   text-align: center;
+  padding: 0 15px;
+  margin-bottom: 15px;
 }
 .card-details {
-  top: 0;
-  left: 0;
-  /* margin-top: -40px; */
-  padding: 0;
-  /* border: 1px solid #cccc; */
+  padding: 10px 0;
 }
 .card-link {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #363636;
 }
 .card-link a {
   text-decoration: none;
   color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card-link a:hover {
+  color: #fff;
 }
 .contact {
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: space-around;
   color: #fff;
-
   margin-top: 200px;
 }
 .contact-info {
   display: flex;
-
   justify-content: space-around;
   gap: 70px;
   font-size: 25px;
@@ -474,7 +471,6 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   color: #ffff;
   margin: 70px 0px;
   background-color: #000;
@@ -482,7 +478,6 @@ hr {
 }
 .navbar ul {
   display: flex;
-
   justify-content: space-around;
   list-style: none;
   gap: 65px;
@@ -528,7 +523,6 @@ hr {
   width: 214px;
   height: 54px;
   font-size: 12px;
-
   font-size: 20px;
   cursor: pointer;
 }
@@ -548,7 +542,6 @@ hr {
     width: 100vw;
   }
   .myImage {
-    /* display: none; */
   }
   #not-responsive {
     display: none;
@@ -559,7 +552,6 @@ hr {
   .about {
     width: 100vw;
     text-align: center;
-    /* height: 100vh; */
   }
   .about h1 {
     width: 100vw;

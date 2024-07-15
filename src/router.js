@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "./components/DashboardOverview.vue";
 import AboutMe from "./components/AboutMe.vue";
 import ProjectList from "./components/ProjectList.vue";
+import ContactMe from "./components/ContactMe.vue"
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -20,6 +21,10 @@ const router = createRouter({
     {
       path: "/project-list",
       component: ProjectList,
+    },
+    {
+      path: "/contact",
+      component: ContactMe,
     },
   ],
 });

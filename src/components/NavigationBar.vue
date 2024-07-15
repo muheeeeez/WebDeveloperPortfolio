@@ -6,9 +6,9 @@
       <ul class="navbar" :class="{ open: isMenu }">
         <li><router-link to="/home">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
-        <li><a href="#tech-stack">Tech Stack</a></li>
+        <li><a href="/home#tech-stack">Tech Stack</a></li>
         <li><router-link to="/project-list">Projects</router-link></li>
-        <li><a href="#contact">Contacts</a></li>
+        <li><router-link to="/contact">Contact</router-link></li>
         <li>
           <button class="show" @click="downloadResume">Download resume</button>
         </li>
