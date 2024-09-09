@@ -161,7 +161,7 @@
             alt="JavaScript"
             class="tech-icon"
           />
-          <img src="../img/logo/vue-logo.png" alt="Vue.js" class="tech-icon" />
+          <img src="../img/logo/Vue-logo.png" alt="Vue.js" class="tech-icon" />
           <img src="../img/logo/Nuxt Js.png" alt="Nuxt.js" class="tech-icon" />
           <img src="../img/logo/Ionic.png" alt="Ionic" class="tech-icon" />
 
