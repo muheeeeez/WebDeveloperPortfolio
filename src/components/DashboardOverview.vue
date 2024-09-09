@@ -10,7 +10,7 @@
           <div class="name" data-text="Abdul-muiz Olaleye">
             Abdul-muiz Olaleye
           </div>
-          I build things for web
+          I am a Full Stack Engineer
         </h1>
       </div>
       <div class="myImage"><img src="../img/moi.jpeg" alt="" /></div>
@@ -27,7 +27,7 @@
         </h1>
       </div>
     </div>
-    <div class="tech-stack" id="tech-stack">
+    <!-- <div class="tech-stack" id="tech-stack">
       <h1>My Tech Stack</h1>
       <p>Technologies I've been working with recently</p>
       <div class="languages">
@@ -80,6 +80,40 @@
               class="flex-item"
             />
           </a>
+          <a href="https://github.com/muheeeeez">
+            <img src="../img/logo/Nuxt JS.png" alt="github" class="flex-item" />
+          </a>
+          <a href="https://github.com/muheeeeez">
+            <img src="../img/logo/PHP.png" alt="github" class="flex-item" />
+          </a>
+          <a href="https://github.com/muheeeeez">
+            <img
+              src="../img/logo/TypeScript.png"
+              alt="github"
+              class="flex-item"
+            />
+          </a>
+          <a href="https://github.com/muheeeeez">
+            <img
+              src="../img/logo/tailwind-logo.png"
+              alt="github"
+              class="flex-item"
+            />
+          </a>
+          <a href="https://github.com/muheeeeez">
+            <img src="../img/logo/Ionic.png" alt="github" class="flex-item" />
+          </a>
+          <a href="https://github.com/muheeeeez">
+            <img
+              src="../img/logo/Capacitor.png"
+              alt="github"
+              class="flex-item"
+            />
+          </a>
+          <a href="https://github.com/muheeeeez">
+            <img src="../img/logo/Flutter.png" alt="github" class="flex-item" />
+          </a>
+
           <a href="https://code.visualstudio.com/">
             <img
               src="../img/logo/vscode-logo.png"
@@ -113,10 +147,113 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
+    <section id="tech-stack">
+      <h2>Tech Stack</h2>
+      <p class="p-text">Technologies I've been working with recently</p>
+      <div class="tech-category">
+        <h3>Frontend</h3>
+        <div class="tech-icons">
+          <img src="../img/logo/html-logo.png" alt="HTML5" class="tech-icon" />
+          <img src="../img/logo/css-logo.png" alt="CSS3" class="tech-icon" />
+          <img
+            src="../img/logo/js-logo.png"
+            alt="JavaScript"
+            class="tech-icon"
+          />
+          <img src="../img/logo/vue-logo.png" alt="Vue.js" class="tech-icon" />
+          <img src="../img/logo/Nuxt Js.png" alt="Nuxt.js" class="tech-icon" />
+          <img src="../img/logo/Ionic.png" alt="Ionic" class="tech-icon" />
+
+          <img
+            src="../img/logo/TypeScript.png"
+            alt="TypeScript"
+            class="tech-icon"
+          />
+          <img src="../img/logo/Flutter.png" alt="Flutter" class="tech-icon" />
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Backend</h3>
+        <div class="tech-icons">
+          <img src="../img/logo/Java-logo.png" alt="Java" class="tech-icon" />
+          <img src="../img/logo/nodejs.png" alt="Node.js" class="tech-icon" />
+          <img
+            src="../img/logo/firebase.png"
+            alt="Firebase"
+            class="tech-icon"
+          />
+          <img src="../img/logo/PHP.png" alt="PHP" class="tech-icon" />
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Databases</h3>
+        <div class="tech-icons">
+          <img src="../img/logo/mongodb.png" alt="MongoDB" class="tech-icon" />
+          <img src="../img/logo/mysql-logo.png" alt="MySQL" class="tech-icon" />
+          <img
+            src="../img/logo/postgres-logo.png"
+            alt="Postgres SQL"
+            class="tech-icon"
+          />
+          <img
+            src="../img/logo/ssms.png"
+            alt="Microsoft SQL Server"
+            class="tech-icon"
+          />
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Tools & DevOps</h3>
+        <div class="tech-icons">
+          <img src="../img/logo/git-logo.png" alt="Git" class="tech-icon" />
+          <img
+            src="../img/logo/github-logo.png"
+            alt="GitHub"
+            class="tech-icon"
+          />
+          <img
+            src="../img/logo/Capacitor.png"
+            alt="Capacitor"
+            class="tech-icon"
+          />
+          <img
+            src="../img/logo/vscode-logo.png"
+            alt="Visual Studio Code"
+            class="tech-icon"
+          />
+          <img
+            src="../img/logo/eclipse-logo.png"
+            alt="Eclipse"
+            class="tech-icon"
+          />
+          <img
+            src="../img/logo/andriod-studio.png"
+            alt="Andriod Studio"
+            class="tech-icon"
+          />
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Others</h3>
+        <div class="tech-icons">
+          <img
+            src="../img/logo/bootstrap-logo.png"
+            alt="Bootstrap"
+            class="tech-icon"
+          />
+          <img
+            src="../img/logo/tailwind-logo.png"
+            alt="Tailwind CSS"
+            class="tech-icon"
+          />
+        </div>
+      </div>
+    </section>
+
     <div class="projects" id="projects">
       <h1>Projects</h1>
-      <p>Things I've built so far</p>
+      <p>My Key Projects</p>
     </div>
     <div class="card-container">
       <div
@@ -239,70 +376,30 @@
 </template>
 
 <script>
-import BlockchainImage from "../img/blockchain.png";
-import TullipsImage from "../img/tullips.png";
-import HelpMeOutDashboard from "../img/help3.png";
-import HelpMeOutLandingPage from "../img/help2.png";
-import HelpMeOut from "../img/help1.png";
-import Intelli from "../img/intelli.png";
+import QuizMaker from "../img/quizMaker.png";
+import MrDetector from "../img/mrDetector.png";
 export default {
   data() {
     return {
       projectList: [
         {
           id: "p1",
-          projectImage: BlockchainImage,
-          projectName: "Blockchain",
+          projectImage: QuizMaker,
+          projectName: "Quiz Maker AI",
           projectDescription:
-            "Explore the transformative power of blockchain technology, unveiling fundamental principles, real-world applications, and investment prospects in an innovative ecosystem.",
-          projectLink: "https://artnftblockchain.netlify.app/",
-          projectCodeLink: "https://github.com/muheeeeez/Blockchain",
+            "QuizMaker AI is a Vue 3 and Nuxt 3 web application designed for interactive quiz creation with AI-powered question generation and feedback. Users can upload various file types to generate quizzes, participate in real-time quizzes with dynamic question-and-answer interactions, and receive AI-driven feedback on their answers. The app features seamless Firebase authentication integration, intuitive drag-and-drop file uploads, and a responsive interface for a smooth user experience",
+          projectLink: "https://quizmai.com/",
+          projectCodeLink:
+            "https://github.com/QuizMakerAI/QuizMakerFrontend.git",
         },
         {
           id: "p2",
-          projectImage: TullipsImage,
-          projectName: "Tulips",
+          projectImage: MrDetector,
+          projectName: "Mr Detector",
           projectDescription:
-            "The Tullips platform empowers designers and developers with resources for inspiration and creation, bridging the gap between creativity and innovation.",
-          projectLink: "https://tullipsweb.netlify.app/",
-          projectCodeLink: "https://github.com/muheeeeez/Tulllips-Website",
-        },
-        {
-          id: "p3",
-          projectImage: HelpMeOutDashboard,
-          projectName: "HelpMeOut",
-          projectDescription:
-            "HelpMeOut is a user-friendly web application that simplifies screen recording and sharing for educational and collaborative purposes.",
-          projectLink: "https://helpmeoutpage.netlify.app/",
-          projectCodeLink:
-            "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutWebsite",
-        },
-        {
-          id: "p4",
-          projectImage: HelpMeOut,
-          projectName: "HelpMeOut",
-          projectDescription: "HelpMeOut user's dashboard",
-          projectLink: "https://helpmeoutrecordedpage.netlify.app/",
-          projectCodeLink:
-            "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutRecordings",
-        },
-        {
-          id: "p5",
-          projectImage: HelpMeOutLandingPage,
-          projectName: "HelpMeOut",
-          projectDescription: "HelpMeOut authentication page",
-          projectLink: "https://helpmeoutsignuppage.netlify.app/",
-          projectCodeLink:
-            "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutLoginPage",
-        },
-        {
-          id: "p6",
-          projectImage: Intelli,
-          projectName: "Intelli",
-          projectDescription:
-            "This Vue.js project implements user authentication functionalities, including sign-in, sign-up, password reset, and email update, utilizing Firebase integration for seamless user management.",
-          projectLink: "https://intelii.netlify.app/",
-          projectCodeLink: "https://github.com/muheeeeez/IntelliLandingPage",
+            "Mr Detector is a Vue 3 and Ionic mobile app designed to take and upload selfies for identity verification. It features seamless camera integration using Capacitor, real-time uploading indicators, and a web-based search functionality. Users can capture selfies, upload images, and verify if their pictures have been used elsewhere online.",
+          projectLink: "https://quizmai.com/",
+          projectCodeLink: "https://github.com/DetectionSystems/FrontEnd",
         },
       ],
     };
@@ -371,6 +468,71 @@ export default {
 .projects p {
   font-size: 32px;
 }
+/* General section styling */
+#tech-stack {
+  padding: 20px;
+  /* background-color: #f5f5f5; */
+}
+
+#tech-stack h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #d9d9d9;
+}
+
+/* Tech category styling */
+.tech-category {
+  margin-bottom: 40px;
+}
+
+.tech-category h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #d9d9d9;
+  text-align: center;
+}
+
+/* Tech icons container */
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Individual tech icon styling */
+.tech-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.p-text {
+  text-align: center;
+  color: #d9d9d9;
+  font-size: 2rem;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .languages {
   padding: 100px 0 180px 0;
 }
@@ -401,7 +563,7 @@ export default {
   color: #cccc;
 }
 .project-list {
-  width: 300px;
+  width: 500px;
   border-radius: 12px;
   border: 1px solid #363636;
   background-color: #282727;
@@ -424,7 +586,7 @@ export default {
 }
 .card-text {
   font-size: 16px;
-  text-align: center;
+  text-align: start;
   padding: 0 15px;
   margin-bottom: 15px;
 }

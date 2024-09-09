@@ -79,6 +79,8 @@ import HelpMeOutDashboard from "../img/help3.png";
 import HelpMeOutLandingPage from "../img/help2.png";
 import HelpMeOut from "../img/help1.png";
 import Intelli from "../img/intelli.png";
+import QuizMaker from "../img/quizMaker.png";
+import MrDetector from "../img/mrDetector.png";
 import DotNotation from "../img/DotNotation.png";
 export default {
   data() {
@@ -86,6 +88,25 @@ export default {
       projectList: [
         {
           id: "p1",
+          projectImage: QuizMaker,
+          projectName: "Quiz Maker AI",
+          projectDescription:
+            "QuizMaker AI is a Vue 3 and Nuxt 3 web application designed for interactive quiz creation with AI-powered question generation and feedback. Users can upload various file types to generate quizzes, participate in real-time quizzes with dynamic question-and-answer interactions, and receive AI-driven feedback on their answers. The app features seamless Firebase authentication integration, intuitive drag-and-drop file uploads, and a responsive interface for a smooth user experience",
+          projectLink: "https://quizmai.com/",
+          projectCodeLink:
+            "https://github.com/QuizMakerAI/QuizMakerFrontend.git",
+        },
+        {
+          id: "p2",
+          projectImage: MrDetector,
+          projectName: "Mr Detector",
+          projectDescription:
+            "Mr Detector is a Vue 3 and Ionic mobile app designed to take and upload selfies for identity verification. It features seamless camera integration using Capacitor, real-time uploading indicators, and a web-based search functionality. Users can capture selfies, upload images, and verify if their pictures have been used elsewhere online.",
+          projectLink: "https://quizmai.com/",
+          projectCodeLink: "https://github.com/DetectionSystems/FrontEnd",
+        },
+        {
+          id: "p3",
           projectImage: BlockchainImage,
           projectName: "Blockchain",
           projectDescription:
@@ -94,7 +115,7 @@ export default {
           projectCodeLink: "https://github.com/muheeeeez/Blockchain",
         },
         {
-          id: "p2",
+          id: "p4",
           projectImage: TullipsImage,
           projectName: "Tulips",
           projectDescription:
@@ -103,7 +124,7 @@ export default {
           projectCodeLink: "https://github.com/muheeeeez/Tulllips-Website",
         },
         {
-          id: "p3",
+          id: "p5",
           projectImage: HelpMeOutDashboard,
           projectName: "HelpMeOut",
           projectDescription:
@@ -113,7 +134,7 @@ export default {
             "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutWebsite",
         },
         {
-          id: "p4",
+          id: "p6",
           projectImage: HelpMeOut,
           projectName: "HelpMeOut",
           projectDescription: "HelpMeOut user's dashboard",
@@ -123,7 +144,7 @@ export default {
             "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutRecordings",
         },
         {
-          id: "p5",
+          id: "p7",
           projectImage: HelpMeOutLandingPage,
           projectName: "HelpMeOut",
           projectDescription: "HelpMeOut authentication page",
@@ -132,7 +153,7 @@ export default {
             "https://github.com/muheeeeez/HelpMeOut/tree/main/HelpMeOutLoginPage",
         },
         {
-          id: "p6",
+          id: "p8",
           projectImage: Intelli,
           projectName: "Intelli",
           projectDescription:
@@ -142,7 +163,7 @@ export default {
         },
 
         {
-          id: "p7",
+          id: "p9",
           projectImage: DotNotation,
           projectName: "DotNotation",
           projectDescription:
@@ -178,7 +199,7 @@ export default {
   color: #cccc;
 }
 .project-list {
-  width: 300px;
+  width: 500px;
   border-radius: 12px;
   border: 1px solid #363636;
   background-color: #282727;
@@ -209,7 +230,7 @@ export default {
 }
 .card-text {
   font-size: 16px;
-  text-align: center;
+  text-align: start;
   margin-bottom: 15px;
 }
 .card-link {
