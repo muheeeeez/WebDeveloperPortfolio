@@ -58,7 +58,7 @@ export default {
       this.isMenu = !this.isMenu;
     },
     downloadResume() {
-      var pdfUrl = "/src/resume/Abdul-muiz Olaleye.pdf";
+      var pdfUrl = "/src/resume/Abdul-muiz-Olaleye.pdf";
       var link = document.createElement("a");
       link.href = pdfUrl;
       link.download = "Abdul-muiz Olaleye resume.pdf";
