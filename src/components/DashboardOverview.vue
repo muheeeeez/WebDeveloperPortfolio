@@ -162,7 +162,7 @@
             class="tech-icon"
           />
           <img src="../img/logo/Vue-logo.png" alt="Vue.js" class="tech-icon" />
-          <img src="../img/logo/Nuxt Js.png" alt="Nuxt.js" class="tech-icon" />
+          <img src="../img/logo/Nuxt JS.png" alt="Nuxt.js" class="tech-icon" />
           <img src="../img/logo/Ionic.png" alt="Ionic" class="tech-icon" />
 
           <img
