@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Dashboard from "./components/DashboardOverview.vue";
-import AboutMe from "./components/AboutMe.vue";
-import ProjectList from "./components/ProjectList.vue";
-import ContactMe from "./components/ContactMe.vue"
+import Home from "./views/Home.vue";
+import About from "./views/About.vue";
+import Skills from "./views/Skills.vue";
+import Projects from "./views/Projects.vue";
+import Contact from "./views/Contact.vue";
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -12,20 +14,42 @@ const router = createRouter({
     },
     {
       path: "/home",
-      component: Dashboard,
+      name: "Home",
+      component: Home,
     },
     {
       path: "/about",
-      component: AboutMe,
+      name: "About",
+      component: About,
+    },
+    {
+      path: "/skills",
+      name: "Skills",
+      component: Skills,
     },
     {
       path: "/project-list",
-      component: ProjectList,
+      name: "Projects",
+      component: Projects,
     },
     {
       path: "/contact",
-      component: ContactMe,
+      name: "Contact",
+      component: Contact,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      }
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 }
+    }
+  }
 });
+
 export default router;

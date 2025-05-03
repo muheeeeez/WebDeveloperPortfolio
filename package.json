@@ -1,6 +1,6 @@
 {
-  "name": "blockchain",
-  "version": "0.0.0",
+  "name": "abdul-muiz-portfolio",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -8,12 +8,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
+    "aos": "^2.3.4",
+    "gsap": "^3.13.0",
+    "three": "^0.158.0",
+    "vite-plugin-glsl": "^1.4.1",
     "vue": "^3.3.4",
     "vue-router": "^4.3.2",
     "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
     "vite": "^4.4.9"
   }
 }

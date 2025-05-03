@@ -1,12 +1,30 @@
 <template>
-  <router-view></router-view>
+  <div class="app-container">
+    <NavigationBar />
+    <main>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </main>
+    <footer class="py-8 bg-dark-blue text-center">
+      <p class="text-sm">© {{ currentYear }} Abdul-muiz Olaleye. All rights reserved.</p>
+    </footer>
+  </div>
 </template>
 
 <script>
-import DashboardOverview from "./components/DashboardOverview.vue";
 import NavigationBar from "./components/NavigationBar.vue";
+
 export default {
-  components: { DashboardOverview, NavigationBar },
+  name: "App",
+  components: { NavigationBar },
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    }
+  }
 };
 </script>
 
@@ -21,5 +39,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
