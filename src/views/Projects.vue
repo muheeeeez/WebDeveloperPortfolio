@@ -306,7 +306,7 @@ export default {
           description: "A blockchain-themed web application",
           image: artNFT,
           technologies: ["Vue.js", "Font Awesome"],
-          category: "Web Design,",
+          category: "Web Design",
           demoLink: "https://artnftblockchain.netlify.app/",
           codeLink: "https://github.com/muheeeeez/Blockchain",
         },
