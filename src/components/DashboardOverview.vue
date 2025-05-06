@@ -13,10 +13,10 @@
           I am a Full Stack Engineer
         </h1>
       </div>
-      <div class="myImage"><img src="../img/moi.jpeg" alt="" /></div>
+      <div class="myImage"><img :src="profileImage" alt="" /></div>
     </div>
     <div id="responsive" class="about">
-      <div class="myImage"><img src="../img/moi.jpeg" alt="" /></div>
+      <div class="myImage"><img :src="profileImage" alt="" /></div>
       <div>
         <h1>
           Hi 👋, My name is
@@ -33,21 +33,21 @@
       <div class="languages">
         <div class="row">
           <a href="https://www.w3schools.com/html/">
-            <img src="../img/logo/html-logo.png" alt="html" class="flex-item" />
+            <img :src="htmlLogo" alt="html" class="flex-item" />
           </a>
           <a href="https://www.w3schools.com/css/">
-            <img src="../img/logo/css-logo.png" alt="css" class="flex-item" />
+            <img :src="cssLogo" alt="css" class="flex-item" />
           </a>
           <a href="https://www.w3schools.com/js/">
             <img
-              src="../img/logo/js-logo.png"
+              :src="jsLogo"
               alt="javascript"
               class="flex-item"
             />
           </a>
           <a href="https://vuejs.org/">
             <img
-              src="../img/logo/Vue-logo.png"
+              :src="vueLogo"
               alt="vue.js"
               style="width: 93.59px; height: 105px"
               class="flex-item"
@@ -55,7 +55,7 @@
           </a>
           <a href="https://www.java.com/en/">
             <img
-              src="../img/logo/Java-logo.png"
+              :src="javaLogo"
               alt="java"
               style="width: 93.59px; height: 150px"
               class="flex-item"
@@ -63,7 +63,7 @@
           </a>
           <a href="https://getbootstrap.com/">
             <img
-              src="../img/logo/bootstrap-logo.png"
+              :src="bootstrapLogo"
               alt="Bootstrap"
               class="flex-item"
             />
@@ -71,59 +71,59 @@
         </div>
         <div class="row">
           <a href="https://git-scm.com/">
-            <img src="../img/logo/git-logo.png" alt="git" class="flex-item" />
+            <img :src="gitLogo" alt="git" class="flex-item" />
           </a>
           <a href="https://github.com/muheeeeez">
             <img
-              src="../img/logo/github-logo.png"
+              :src="githubLogo"
               alt="github"
               class="flex-item"
             />
           </a>
           <a href="https://github.com/muheeeeez">
-            <img src="../img/logo/Nuxt JS.png" alt="github" class="flex-item" />
+            <img :src="nuxtLogo" alt="github" class="flex-item" />
           </a>
           <a href="https://github.com/muheeeeez">
-            <img src="../img/logo/PHP.png" alt="github" class="flex-item" />
+            <img :src="phpLogo" alt="github" class="flex-item" />
           </a>
           <a href="https://github.com/muheeeeez">
             <img
-              src="../img/logo/TypeScript.png"
+              :src="typescriptLogo"
               alt="github"
               class="flex-item"
             />
           </a>
           <a href="https://github.com/muheeeeez">
             <img
-              src="../img/logo/tailwind-logo.png"
+              :src="tailwindLogo"
               alt="github"
               class="flex-item"
             />
           </a>
           <a href="https://github.com/muheeeeez">
-            <img src="../img/logo/Ionic.png" alt="github" class="flex-item" />
+            <img :src="ionicLogo" alt="github" class="flex-item" />
           </a>
           <a href="https://github.com/muheeeeez">
             <img
-              src="../img/logo/Capacitor.png"
+              :src="capacitorLogo"
               alt="github"
               class="flex-item"
             />
           </a>
           <a href="https://github.com/muheeeeez">
-            <img src="../img/logo/Flutter.png" alt="github" class="flex-item" />
+            <img :src="flutterLogo" alt="github" class="flex-item" />
           </a>
 
           <a href="https://code.visualstudio.com/">
             <img
-              src="../img/logo/vscode-logo.png"
+              :src="vscodeLogo"
               alt="vscode"
               class="flex-item"
             />
           </a>
           <a href="https://www.mysql.com/">
             <img
-              src="../img/logo/mysql-logo.png"
+              :src="mysqlLogo"
               alt="mysql"
               style="width: 93.59px; height: 105px"
               class="flex-item"
@@ -131,7 +131,7 @@
           </a>
           <a href="https://www.postgresql.org/">
             <img
-              src="../img/logo/postgres-logo.png"
+              :src="postgresLogo"
               alt="postgres"
               style="width: 93.59px; height: 105px"
               class="flex-item"
@@ -139,7 +139,7 @@
           </a>
           <a href="https://eclipseide.org/">
             <img
-              src="../img/logo/eclipse-logo.png"
+              :src="eclipseLogo"
               alt="eclipse"
               style="width: 93.59px; height: 105px"
               class="flex-item"
@@ -154,81 +154,45 @@
       <div class="tech-category">
         <h3>Frontend</h3>
         <div class="tech-icons">
-          <img src="../img/logo/html-logo.png" alt="HTML5" class="tech-icon" />
-          <img src="../img/logo/css-logo.png" alt="CSS3" class="tech-icon" />
-          <img
-            src="../img/logo/js-logo.png"
-            alt="JavaScript"
-            class="tech-icon"
-          />
-          <img src="../img/logo/Vue-logo.png" alt="Vue.js" class="tech-icon" />
-          <img src="../img/logo/Nuxt JS.png" alt="Nuxt.js" class="tech-icon" />
-          <img src="../img/logo/Ionic.png" alt="Ionic" class="tech-icon" />
+          <img :src="htmlLogo" alt="HTML5" class="tech-icon" />
+          <img :src="cssLogo" alt="CSS3" class="tech-icon" />
+          <img :src="jsLogo" alt="JavaScript" class="tech-icon" />
+          <img :src="vueLogo" alt="Vue.js" class="tech-icon" />
+          <img :src="nuxtLogo" alt="Nuxt.js" class="tech-icon" />
+          <img :src="ionicLogo" alt="Ionic" class="tech-icon" />
 
-          <img
-            src="../img/logo/TypeScript.png"
-            alt="TypeScript"
-            class="tech-icon"
-          />
-          <img src="../img/logo/Flutter.png" alt="Flutter" class="tech-icon" />
+          <img :src="typescriptLogo" alt="TypeScript" class="tech-icon" />
+          <img :src="flutterLogo" alt="Flutter" class="tech-icon" />
         </div>
       </div>
       <div class="tech-category">
         <h3>Backend</h3>
         <div class="tech-icons">
-          <img src="../img/logo/Java-logo.png" alt="Java" class="tech-icon" />
-          <img src="../img/logo/nodejs.png" alt="Node.js" class="tech-icon" />
-          <img
-            src="../img/logo/firebase.png"
-            alt="Firebase"
-            class="tech-icon"
-          />
-          <img src="../img/logo/PHP.png" alt="PHP" class="tech-icon" />
+          <img :src="javaLogo" alt="Java" class="tech-icon" />
+          <img :src="nodejsLogo" alt="Node.js" class="tech-icon" />
+          <img :src="firebaseLogo" alt="Firebase" class="tech-icon" />
+          <img :src="phpLogo" alt="PHP" class="tech-icon" />
         </div>
       </div>
       <div class="tech-category">
         <h3>Databases</h3>
         <div class="tech-icons">
-          <img src="../img/logo/mongodb.png" alt="MongoDB" class="tech-icon" />
-          <img src="../img/logo/mysql-logo.png" alt="MySQL" class="tech-icon" />
-          <img
-            src="../img/logo/postgres-logo.png"
-            alt="Postgres SQL"
-            class="tech-icon"
-          />
-          <img
-            src="../img/logo/ssms.png"
-            alt="Microsoft SQL Server"
-            class="tech-icon"
-          />
+          <img :src="mongodbLogo" alt="MongoDB" class="tech-icon" />
+          <img :src="mysqlLogo" alt="MySQL" class="tech-icon" />
+          <img :src="postgresLogo" alt="Postgres SQL" class="tech-icon" />
+          <img :src="ssmsLogo" alt="Microsoft SQL Server" class="tech-icon" />
         </div>
       </div>
       <div class="tech-category">
         <h3>Tools & DevOps</h3>
         <div class="tech-icons">
-          <img src="../img/logo/git-logo.png" alt="Git" class="tech-icon" />
+          <img :src="gitLogo" alt="Git" class="tech-icon" />
+          <img :src="githubLogo" alt="GitHub" class="tech-icon" />
+          <img :src="capacitorLogo" alt="Capacitor" class="tech-icon" />
+          <img :src="vscodeLogo" alt="Visual Studio Code" class="tech-icon" />
+          <img :src="eclipseLogo" alt="Eclipse" class="tech-icon" />
           <img
-            src="../img/logo/github-logo.png"
-            alt="GitHub"
-            class="tech-icon"
-          />
-          <img
-            src="../img/logo/Capacitor.png"
-            alt="Capacitor"
-            class="tech-icon"
-          />
-          <img
-            src="../img/logo/vscode-logo.png"
-            alt="Visual Studio Code"
-            class="tech-icon"
-          />
-          <img
-            src="../img/logo/eclipse-logo.png"
-            alt="Eclipse"
-            class="tech-icon"
-          />
-          <img
-            src="../img/logo/andriod-studio.png"
+            :src="androidStudioLogo"
             alt="Andriod Studio"
             class="tech-icon"
           />
@@ -237,16 +201,8 @@
       <div class="tech-category">
         <h3>Others</h3>
         <div class="tech-icons">
-          <img
-            src="../img/logo/bootstrap-logo.png"
-            alt="Bootstrap"
-            class="tech-icon"
-          />
-          <img
-            src="../img/logo/tailwind-logo.png"
-            alt="Tailwind CSS"
-            class="tech-icon"
-          />
+          <img :src="bootstrapLogo" alt="Bootstrap" class="tech-icon" />
+          <img :src="tailwindLogo" alt="Tailwind CSS" class="tech-icon" />
         </div>
       </div>
     </section>
@@ -330,26 +286,35 @@
       </button>
     </div>
     <div class="contact" id="contact">
-      <h1 class="contact-name">Contact</h1>
-      <div class="contact-image"><img src="../img/logo.png" alt="" /></div>
-
+      <h1>Contact</h1>
+      <p>
+        Have a sweet project in mind or just wanna say hi. Feel free to contact
+        me.
+      </p>
       <div class="contact-info">
-        <p>+1 753 886-1887</p>
-        <p>abdulmuiz.olatunbosun@gmail.com</p>
+        <div class="contact-details">
+          <div class="contact-image"><img :src="logoImage" alt="" /></div>
+          <div class="contact-address">
+            <div class="contact-address-det">
+              abdulmuiz.olatunbosun@gmail.com
+            </div>
+            <div class="contact-address-det">+(1) 753-886-1887</div>
+          </div>
+          <div class="contact-address-icons">
+            <a href="https://github.com/muheeeeez"
+              ><img :src="githubIcon" alt=""
+            /></a>
+            <a href="https://twitter.com/IAmMuizOlaleye"
+              ><img :src="twitterIcon" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/abdul-muiz-olaleye/"
+              ><img :src="linkedinIcon" alt=""
+            /></a>
+          </div>
+        </div>
         <button class="download" @click="downloadResume">
           Download Resume
         </button>
-        <div class="contact-social-media">
-          <a href="https://github.com/muheeeeez"
-            ><img src="../img/github-icon.png" alt=""
-          /></a>
-          <a href="https://twitter.com/IAmMuizOlaleye"
-            ><img src="../img/twitter-icon.png" alt=""
-          /></a>
-          <a href="https://www.linkedin.com/in/abdul-muiz-olaleye/"
-            ><img src="../img/linkedin-icon.png" alt=""
-          /></a>
-        </div>
       </div>
     </div>
     <div>
@@ -376,11 +341,99 @@
 </template>
 
 <script>
+// Import profile image
+import profileImage from "../img/moi.jpeg";
+
+// Import logo images
+import htmlLogo from "../img/logo/html-logo.png";
+import cssLogo from "../img/logo/css-logo.png";
+import jsLogo from "../img/logo/js-logo.png";
+import vueLogo from "../img/logo/Vue-logo.png";
+import nuxtLogo from "../img/logo/Nuxt JS.png";
+import ionicLogo from "../img/logo/Ionic.png";
+import typescriptLogo from "../img/logo/TypeScript.png";
+import flutterLogo from "../img/logo/Flutter.png";
+import javaLogo from "../img/logo/Java-logo.png";
+import nodejsLogo from "../img/logo/nodejs.png";
+import firebaseLogo from "../img/logo/firebase.png";
+import phpLogo from "../img/logo/PHP.png";
+import mongodbLogo from "../img/logo/mongodb.png";
+import mysqlLogo from "../img/logo/mysql-logo.png";
+import postgresLogo from "../img/logo/postgres-logo.png";
+import ssmsLogo from "../img/logo/ssms.png";
+import gitLogo from "../img/logo/git-logo.png";
+import githubLogo from "../img/logo/github-logo.png";
+import capacitorLogo from "../img/logo/Capacitor.png";
+import vscodeLogo from "../img/logo/vscode-logo.png";
+import eclipseLogo from "../img/logo/eclipse-logo.png";
+import androidStudioLogo from "../img/logo/andriod-studio.png";
+import bootstrapLogo from "../img/logo/bootstrap-logo.png";
+import tailwindLogo from "../img/logo/tailwind-logo.png";
+
+// Import social media icons and logo
+import logoImage from "../img/logo.png";
+import githubIcon from "../img/github-icon.png";
+import twitterIcon from "../img/twitter-icon.png";
+import linkedinIcon from "../img/linkedin-icon.png";
+
+// Import project images as well if used in this component
+import BlockchainImage from "../img/blockchain.png";
+import TullipsImage from "../img/tullips.png";
+import HelpMeOutDashboard from "../img/help3.png";
+import HelpMeOutLandingPage from "../img/help2.png";
+import HelpMeOut from "../img/help1.png";
+import Intelli from "../img/intelli.png";
 import QuizMaker from "../img/quizMaker.png";
 import MrDetector from "../img/mrDetector.png";
+import DotNotation from "../img/DotNotation.png";
+
 export default {
   data() {
     return {
+      // Make all the imported images available to the template
+      profileImage,
+      htmlLogo,
+      cssLogo,
+      jsLogo,
+      vueLogo,
+      nuxtLogo,
+      ionicLogo,
+      typescriptLogo,
+      flutterLogo,
+      javaLogo,
+      nodejsLogo,
+      firebaseLogo,
+      phpLogo,
+      mongodbLogo,
+      mysqlLogo,
+      postgresLogo,
+      ssmsLogo,
+      gitLogo,
+      githubLogo,
+      capacitorLogo,
+      vscodeLogo,
+      eclipseLogo,
+      androidStudioLogo,
+      bootstrapLogo,
+      tailwindLogo,
+
+      // Social media icons and logo
+      logoImage,
+      githubIcon,
+      twitterIcon,
+      linkedinIcon,
+
+      // Project images
+      BlockchainImage,
+      TullipsImage,
+      HelpMeOutDashboard,
+      HelpMeOutLandingPage,
+      HelpMeOut,
+      Intelli,
+      QuizMaker,
+      MrDetector,
+      DotNotation,
+
       projectList: [
         {
           id: "p1",
