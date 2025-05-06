@@ -255,52 +255,63 @@
 </template>
 
 <script>
+// Import logo images
+import htmlLogo from "../img/logo/html-logo.png";
+import cssLogo from "../img/logo/css-logo.png";
+import jsLogo from "../img/logo/js-logo.png";
+import typescriptLogo from "../img/logo/TypeScript.png";
+import vueLogo from "../img/logo/Vue-logo.png";
+import nuxtLogo from "../img/logo/Nuxt JS.png";
+import tailwindLogo from "../img/logo/tailwind-logo.png";
+import flutterLogo from "../img/logo/Flutter.png";
+import ionicLogo from "../img/logo/Ionic.png";
+import nodejsLogo from "../img/logo/nodejs.png";
+import javaLogo from "../img/logo/Java-logo.png";
+import phpLogo from "../img/logo/PHP.png";
+import firebaseLogo from "../img/logo/firebase.png";
+import mysqlLogo from "../img/logo/mysql-logo.png";
+import postgresLogo from "../img/logo/postgres-logo.png";
+import mongodbLogo from "../img/logo/mongodb.png";
+import ssmsLogo from "../img/logo/ssms.png";
+import gitLogo from "../img/logo/git-logo.png";
+import githubLogo from "../img/logo/github-logo.png";
+import vscodeLogo from "../img/logo/vscode-logo.png";
+import eclipseLogo from "../img/logo/eclipse-logo.png";
+
 export default {
   name: "SkillsPage",
   data() {
     return {
       frontendSkills: [
-        { name: "HTML5", icon: "./src/img/logo/html-logo.png", level: 95 },
-        { name: "CSS3", icon: "./src/img/logo/css-logo.png", level: 90 },
-        { name: "JavaScript", icon: "./src/img/logo/js-logo.png", level: 85 },
-        {
-          name: "TypeScript",
-          icon: "./src/img/logo/TypeScript.png",
-          level: 75,
-        },
-        { name: "Vue.js", icon: "./src/img/logo/Vue-logo.png", level: 80 },
-        { name: "Nuxt.js", icon: "../img/logo/Nuxt JS.png", level: 70 },
-        {
-          name: "Tailwind CSS",
-          icon: "./src/img/logo/tailwind-logo.png",
-          level: 85,
-        },
-        { name: "Flutter", icon: "./src/img/logo/Flutter.png", level: 60 },
-        { name: "Ionic", icon: "./src/img/logo/Ionic.png", level: 65 },
+        { name: "HTML5", icon: htmlLogo, level: 95 },
+        { name: "CSS3", icon: cssLogo, level: 90 },
+        { name: "JavaScript", icon: jsLogo, level: 85 },
+        { name: "TypeScript", icon: typescriptLogo, level: 75 },
+        { name: "Vue.js", icon: vueLogo, level: 80 },
+        { name: "Nuxt.js", icon: nuxtLogo, level: 70 },
+        { name: "Tailwind CSS", icon: tailwindLogo, level: 85 },
+        { name: "Flutter", icon: flutterLogo, level: 60 },
+        { name: "Ionic", icon: ionicLogo, level: 65 },
       ],
       backendSkills: [
-        { name: "Node.js", icon: "./src/img/logo/nodejs.png", level: 80 },
-        { name: "Java", icon: "./src/img/logo/Java-logo.png", level: 75 },
-        { name: "PHP", icon: "./src/img/logo/PHP.png", level: 70 },
-        { name: "Express", icon: "./src/img/logo/express.png", level: 75 },
-        { name: "RESTful APIs", icon: "./src/img/logo/api.png", level: 80 },
-        { name: "Firebase", icon: "./src/img/logo/firebase.png", level: 75 },
+        { name: "Node.js", icon: nodejsLogo, level: 80 },
+        { name: "Java", icon: javaLogo, level: 75 },
+        { name: "PHP", icon: phpLogo, level: 70 },
+        { name: "Express", icon: nodejsLogo, level: 75 },
+        { name: "RESTful APIs", icon: nodejsLogo, level: 80 },
+        { name: "Firebase", icon: firebaseLogo, level: 75 },
       ],
       databaseSkills: [
-        { name: "MySQL", icon: "./src/img/logo/mysql-logo.png", level: 85 },
-        {
-          name: "PostgreSQL",
-          icon: "./src/img/logo/postgres-logo.png",
-          level: 75,
-        },
-        { name: "MongoDB", icon: "./src/img/logo/mongodb.png", level: 80 },
-        { name: "SQL Server", icon: "./src/img/logo/ssms.png", level: 70 },
+        { name: "MySQL", icon: mysqlLogo, level: 85 },
+        { name: "PostgreSQL", icon: postgresLogo, level: 75 },
+        { name: "MongoDB", icon: mongodbLogo, level: 80 },
+        { name: "SQL Server", icon: ssmsLogo, level: 70 },
       ],
       devopsSkills: [
-        { name: "Git", icon: "./src/img/logo/git-logo.png", level: 90 },
-        { name: "GitHub", icon: "./src/img/logo/github-logo.png", level: 85 },
-        { name: "VS Code", icon: "./src/img/logo/vscode-logo.png", level: 95 },
-        { name: "Eclipse", icon: "./src/img/logo/eclipse-logo.png", level: 70 },
+        { name: "Git", icon: gitLogo, level: 90 },
+        { name: "GitHub", icon: githubLogo, level: 85 },
+        { name: "VS Code", icon: vscodeLogo, level: 95 },
+        { name: "Eclipse", icon: eclipseLogo, level: 70 },
       ],
       softSkills: [
         { name: "Problem Solving", level: 90 },

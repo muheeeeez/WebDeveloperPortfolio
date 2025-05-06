@@ -5,14 +5,15 @@
 </template>
 
 <script>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { gsap } from 'gsap';
+import { ref, onMounted, onBeforeUnmount } from "vue";
+import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { gsap } from "gsap";
+import modelPath from "../img/muiz.glb";
 
 export default {
-  name: 'ThreeModel',
+  name: "ThreeModel",
   setup() {
     const threeContainer = ref(null);
     let scene, camera, renderer, model, controls, mixer, clock;
@@ -35,7 +36,10 @@ export default {
 
       // Renderer setup
       renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-      renderer.setSize(threeContainer.value.clientWidth, threeContainer.value.clientHeight);
+      renderer.setSize(
+        threeContainer.value.clientWidth,
+        threeContainer.value.clientHeight
+      );
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.outputColorSpace = THREE.SRGBColorSpace;
       threeContainer.value.appendChild(renderer.domElement);
@@ -52,11 +56,11 @@ export default {
       controls.autoRotate = false;
       controls.autoRotateSpeed = 0.5;
       controls.enablePan = false;
-      
+
       // Prevent controls from interfering with page scrolling
       controls.enableZoom = false;
       controls.enabled = true;
-      renderer.domElement.style.pointerEvents = 'none';
+      renderer.domElement.style.pointerEvents = "none";
 
       // Clock for animations
       clock = new THREE.Clock();
@@ -69,13 +73,13 @@ export default {
       directionalLight.position.set(5, 5, 5);
       scene.add(directionalLight);
 
-      const pointLight = new THREE.PointLight(0x4A5AF9, 1);
+      const pointLight = new THREE.PointLight(0x4a5af9, 1);
       pointLight.position.set(-5, 3, 0);
       scene.add(pointLight);
 
       // Load 3D model
       const loader = new GLTFLoader();
-      loader.load('./src/img/muiz.glb', (gltf) => {
+      loader.load(modelPath, (gltf) => {
         model = gltf.scene;
         model.scale.set(1, 1, 1);
         model.position.set(0, 0, 0);
@@ -100,21 +104,21 @@ export default {
       });
 
       // Handle window resize
-      window.addEventListener('resize', onWindowResize);
+      window.addEventListener("resize", onWindowResize);
     };
 
     const animate = () => {
       requestAnimationFrame(animate);
-      
+
       // Update controls
       if (controls) controls.update();
-      
+
       // Update any animation mixers
       const delta = clock.getDelta();
       if (animationMixers.length > 0) {
         animationMixers.forEach((mixer) => mixer.update(delta));
       }
-      
+
       // Render scene
       if (renderer && scene && camera) {
         renderer.render(scene, camera);
@@ -123,9 +127,13 @@ export default {
 
     const onWindowResize = () => {
       if (camera && renderer && threeContainer.value) {
-        camera.aspect = threeContainer.value.clientWidth / threeContainer.value.clientHeight;
+        camera.aspect =
+          threeContainer.value.clientWidth / threeContainer.value.clientHeight;
         camera.updateProjectionMatrix();
-        renderer.setSize(threeContainer.value.clientWidth, threeContainer.value.clientHeight);
+        renderer.setSize(
+          threeContainer.value.clientWidth,
+          threeContainer.value.clientHeight
+        );
       }
     };
 
@@ -135,7 +143,7 @@ export default {
     });
 
     onBeforeUnmount(() => {
-      window.removeEventListener('resize', onWindowResize);
+      window.removeEventListener("resize", onWindowResize);
       if (threeContainer.value && renderer) {
         threeContainer.value.removeChild(renderer.domElement);
       }
@@ -144,9 +152,9 @@ export default {
     });
 
     return {
-      threeContainer
+      threeContainer,
     };
-  }
+  },
 };
 </script>
 
