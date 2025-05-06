@@ -123,7 +123,7 @@
           class="text-center py-12"
           data-aos="fade-up"
         >
-          <p class="text-lg">No projects found in this category.</p>
+          <p class="text-lg">Project Coming Soon</p>
           <button @click="currentFilter = 'all'" class="btn-primary mt-4">
             View All Projects
           </button>
@@ -223,14 +223,7 @@ export default {
   data() {
     return {
       currentFilter: "all",
-      categories: [
-        "Chrome Extension",
-        "Web Development",
-        "Web Design",
-        "Mobile Apps",
-
-        "School Projects",
-      ],
+      categories: ["Chrome Extension", "Web Development", "Web Design"],
       projects: [
         {
           title: "HelpMeOut",
