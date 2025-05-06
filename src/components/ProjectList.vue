@@ -202,7 +202,7 @@ export default {
   width: 500px;
   border-radius: 12px;
   border: 1px solid #363636;
-  background-color: #282727;
+  background-color: #3a3a3a;
   transition: transform 0.2s ease-in;
   overflow: hidden;
 }

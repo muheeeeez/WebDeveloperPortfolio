@@ -8,8 +8,10 @@
         </transition>
       </router-view>
     </main>
-    <footer class="py-8 bg-dark-blue text-center">
-      <p class="text-sm">© {{ currentYear }} Abdul-muiz Olaleye. All rights reserved.</p>
+    <footer class="py-8 bg-card-bg text-center">
+      <p class="text-sm">
+        © {{ currentYear }} Abdul-muiz Olaleye. All rights reserved.
+      </p>
     </footer>
   </div>
 </template>
@@ -23,8 +25,8 @@ export default {
   computed: {
     currentYear() {
       return new Date().getFullYear();
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -38,7 +40,7 @@ body {
   left: 0;
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: #f2f2f2;
 }
 
 .fade-enter-active,

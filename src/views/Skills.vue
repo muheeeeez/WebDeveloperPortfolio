@@ -87,7 +87,7 @@
     </section>
 
     <!-- Additional Skills Sections -->
-    <section class="section bg-dark-blue py-16">
+    <section class="section bg-card-bg py-16">
       <div class="container mx-auto">
         <div class="grid md:grid-cols-3 gap-12">
           <!-- Database Skills -->
@@ -339,15 +339,16 @@ export default {
       ],
       certifications: [
         {
-          name: "AWS Cloud Practitioner",
-          issuer: "Amazon Web Services",
-          date: "2024",
-        },
-        {
           name: "AWS AI Practitioner",
           issuer: "Amazon Web Services",
           date: "2025",
         },
+        {
+          name: "AWS Cloud Practitioner",
+          issuer: "Amazon Web Services",
+          date: "2024",
+        },
+
         {
           name: "Computer Programming Diploma",
           issuer: "Algonquin College",
@@ -366,7 +367,7 @@ export default {
 
 <style scoped>
 .skill-item {
-  @apply rounded-md p-4 bg-dark-blue/50 transition-all duration-300 hover:bg-dark-blue;
+  @apply rounded-md p-4 bg-card-bg/50 transition-all duration-300 hover:bg-card-bg;
 }
 
 .skill-logo {

@@ -251,7 +251,7 @@
     </section>
 
     <!-- Map Section -->
-    <section class="section py-16 bg-dark-blue">
+    <section class="section py-16 bg-card-bg">
       <div class="container mx-auto">
         <div class="text-center mb-12" data-aos="fade-up">
           <h2 class="mb-3">My Location</h2>
@@ -414,7 +414,7 @@ export default {
 }
 
 .social-icon {
-  @apply p-3 rounded-full bg-dark-blue hover:bg-primary/20 transition-colors duration-300;
+  @apply p-3 rounded-full bg-card-bg hover:bg-primary/20 transition-colors duration-300;
 }
 
 .social-icon img {

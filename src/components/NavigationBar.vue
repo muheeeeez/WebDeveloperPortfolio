@@ -49,21 +49,21 @@
           <a
             href="https://github.com/muheeeeez"
             target="_blank"
-            class="text-gray-300 hover:text-primary transition"
+            class="text-gray-600 hover:text-primary transition"
           >
             <img :src="githubIcon" alt="GitHub" class="h-6 w-6" />
           </a>
           <a
             href="https://twitter.com/IAmMuizOlaleye"
             target="_blank"
-            class="text-gray-300 hover:text-primary transition"
+            class="text-gray-600 hover:text-primary transition"
           >
             <img :src="twitterIcon" alt="Twitter" class="h-6 w-6" />
           </a>
           <a
             href="https://www.linkedin.com/in/abdul-muiz-olaleye/"
             target="_blank"
-            class="text-gray-300 hover:text-primary transition"
+            class="text-gray-600 hover:text-primary transition"
           >
             <img :src="linkedinIcon" alt="LinkedIn" class="h-6 w-6" />
           </a>
@@ -71,7 +71,7 @@
 
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
-          <button @click="toggleMenu" class="text-gray-300 hover:text-white">
+          <button @click="toggleMenu" class="text-gray-600 hover:text-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -109,7 +109,7 @@
 
     <!-- Mobile Menu -->
     <div class="md:hidden" v-if="isMenuOpen">
-      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-dark-blue">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card-bg">
         <router-link
           to="/home"
           class="mobile-nav-link"
@@ -151,21 +151,21 @@
           <a
             href="https://github.com/muheeeeez"
             target="_blank"
-            class="text-gray-300 hover:text-white"
+            class="text-gray-600 hover:text-primary"
           >
             <img :src="githubIcon" alt="GitHub" class="h-6 w-6" />
           </a>
           <a
             href="https://twitter.com/IAmMuizOlaleye"
             target="_blank"
-            class="text-gray-300 hover:text-white"
+            class="text-gray-600 hover:text-primary"
           >
             <img :src="twitterIcon" alt="Twitter" class="h-6 w-6" />
           </a>
           <a
             href="https://www.linkedin.com/in/abdul-muiz-olaleye/"
             target="_blank"
-            class="text-gray-300 hover:text-white"
+            class="text-gray-600 hover:text-primary"
           >
             <img :src="linkedinIcon" alt="LinkedIn" class="h-6 w-6" />
           </a>
@@ -218,10 +218,10 @@ export default {
 
 <style scoped>
 .nav-link {
-  @apply text-gray-300 hover:text-primary font-medium transition-colors duration-200;
+  @apply text-gray-600 hover:text-primary font-medium transition-colors duration-200;
 }
 
 .mobile-nav-link {
-  @apply block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-dark-blue hover:text-white transition-colors duration-200;
+  @apply block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-card-bg hover:text-primary transition-colors duration-200;
 }
 </style>

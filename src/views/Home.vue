@@ -2,27 +2,39 @@
   <div class="home">
     <!-- Hero Section -->
     <section
-      class="min-h-screen pt-24 pb-12 flex flex-col justify-center relative overflow-hidden"
+      class="min-h-screen py-12 flex items-center relative overflow-hidden hero-section"
     >
-      <div class="absolute inset-0 z-0">
-        <ThreeModel />
+      <!-- Background decorative elements -->
+      <div
+        class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
+      >
+        <div
+          class="absolute top-0 left-0 w-32 h-32 bg-primary rounded-full blur-3xl transform translate-x-12 -translate-y-8"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-64 h-64 bg-secondary rounded-full blur-3xl transform -translate-x-16 translate-y-16"
+        ></div>
       </div>
+
       <div class="container mx-auto px-6 relative z-10">
-        <div class="flex flex-col items-center justify-center">
-          <div data-aos="fade-up" class="text-center max-w-xl">
-            <p class="text-primary font-medium text-lg mb-3">
-              Hello, my name is
-            </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Left Column: Text Content -->
+          <div data-aos="fade-right" data-aos-duration="1000" class="text-left">
+            <div class="inline-block bg-primary/10 px-4 py-2 rounded-full mb-4">
+              <p class="text-primary font-medium">Hello, my name is</p>
+            </div>
             <h1 class="gradient-text text-5xl md:text-6xl font-bold mb-5">
               Abdul-muiz Olaleye
             </h1>
-            <h2 class="text-3xl md:text-4xl mb-8">Full Stack Developer</h2>
-            <p class="text-xl mb-10 max-w-lg mx-auto">
+            <h2 class="text-3xl md:text-4xl mb-6 text-gray-200">
+              Full Stack Developer
+            </h2>
+            <p class="text-lg mb-10 max-w-lg text-gray-300 leading-relaxed">
               I'm a Computer Programming graduate from Algonquin College,
               specializing in building exceptional digital experiences with
               modern web technologies.
             </p>
-            <div class="flex flex-wrap gap-6 justify-center">
+            <div class="flex flex-wrap gap-6">
               <router-link
                 to="/project-list"
                 class="btn-primary text-lg px-8 py-3"
@@ -37,12 +49,28 @@
               </router-link>
             </div>
           </div>
+
+          <!-- Right Column: 3D Model -->
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div
+              class="model-container h-[600px] w-full rounded-2xl overflow-hidden shadow-xl border border-primary/20 backdrop-blur-sm relative bg-card-bg/30"
+            >
+              <div
+                class="model-overlay absolute inset-0 z-0 bg-gradient-to-br from-primary/5 to-secondary/5 pointer-events-none"
+              ></div>
+              <ThreeModel />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Tech Stack Preview Section -->
-    <section class="py-20 bg-dark-blue" id="tech-stack-preview">
+    <section class="py-20 bg-card-bg" id="tech-stack-preview">
       <div class="container mx-auto px-6">
         <div class="text-center mb-12" data-aos="fade-up">
           <h2 class="mb-3">My Tech Stack</h2>
@@ -186,7 +214,10 @@ import htmlLogo from "../img/logo/html-logo.png";
 import cssLogo from "../img/logo/css-logo.png";
 
 // Import project placeholder image - using demo.jpg instead since project-placeholder.jpg doesn't exist
-import projectPlaceholder from "../img/demo.jpg";
+
+import helpMeOut from "../img/help3.png";
+import quizMaker from "../img/quiz.png";
+import smartBrains from "../img/smartbrains.png";
 
 export default {
   name: "HomePage",
@@ -205,30 +236,37 @@ export default {
       ],
       featuredProjects: [
         {
-          title: "Project One",
+          title: "HelpMeOut",
           description:
-            "A responsive web application with modern UI/UX principles",
-          image: projectPlaceholder,
-          technologies: ["Vue.js", "TypeScript", "Tailwind CSS"],
-          demoLink: "#",
-          codeLink: "#",
+            "HelpMeOut is a web application that allows users to create and share instructional screen recordings to help friends and family navigate websites",
+          image: helpMeOut,
+          technologies: [
+            "Vue.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Firebase",
+            "API",
+          ],
+          demoLink: "https://help-meout.netlify.app/",
+          codeLink: "https://github.com/muheeeeez/HelpMeOut-v2",
         },
         {
-          title: "Project Two",
+          title: "QuizMakerAI",
           description:
-            "Full stack application with secure authentication and database",
-          image: projectPlaceholder,
-          technologies: ["Node.js", "Express", "MongoDB", "Vue.js"],
-          demoLink: "#",
-          codeLink: "#",
+            "A comprehensive quiz creation and management platform that enables users to build, share, and take quizzes.",
+          image: quizMaker,
+          technologies: ["Vue.js", "Firebase", "Axios"],
+          demoLink: "https://quizmai.com/",
+          codeLink: "https://github.com/QuizMakerAI/QuizMakerFrontend",
         },
         {
-          title: "Project Three",
-          description: "Interactive 3D visualization using WebGL technologies",
-          image: projectPlaceholder,
-          technologies: ["Three.js", "JavaScript", "GSAP"],
-          demoLink: "#",
-          codeLink: "#",
+          title: "SmartBrain",
+          description:
+            "SmartBrain is a web application that detects faces in images using AI algorithms",
+          image: smartBrains,
+          technologies: ["Vue.js", "Tailwind CSS", "Firebase", "Axios"],
+          demoLink: "https://smart-brain-dev.netlify.app/",
+          codeLink: "https://github.com/muheeeeez/Smartbrain-Frontend",
         },
       ],
     };
@@ -238,10 +276,56 @@ export default {
 
 <style scoped>
 .tech-card {
-  @apply p-4 bg-dark-blue/50 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-all duration-300 w-full h-32;
+  @apply p-4 bg-card-bg/50 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-all duration-300 w-full h-32;
 }
 
 .tech-icon {
   @apply h-12 w-auto mb-2;
+}
+
+.hero-section {
+  background-color: #050507;
+  background-image: radial-gradient(
+      circle at 50% 50%,
+      rgba(74, 90, 249, 0.05) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(231, 15, 170, 0.03) 0%,
+      transparent 30%
+    );
+}
+
+.model-container {
+  position: relative;
+  background: linear-gradient(
+    145deg,
+    rgba(32, 32, 40, 0.6),
+    rgba(10, 10, 15, 0.8)
+  );
+  transition: all 0.5s ease;
+  box-shadow: 0 10px 30px -5px rgba(74, 90, 249, 0.1),
+    0 5px 15px -5px rgba(231, 15, 170, 0.05);
+}
+
+.model-container:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px -5px rgba(74, 90, 249, 0.2),
+    0 10px 20px -5px rgba(231, 15, 170, 0.15);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #e70faa, #4a5af9);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .model-container {
+    height: 400px;
+    margin-top: 2rem;
+  }
 }
 </style> 

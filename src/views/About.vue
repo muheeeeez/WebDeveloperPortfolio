@@ -85,7 +85,7 @@
     </section>
 
     <!-- Experience & Education Section -->
-    <section class="section bg-dark-blue py-16">
+    <section class="section bg-card-bg py-16">
       <div class="container mx-auto">
         <div class="grid md:grid-cols-2 gap-12">
           <!-- Education -->
@@ -100,7 +100,9 @@
               >
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">{{ edu.period }}</div>
-                <div class="timeline-content card">
+                <div
+                  class="timeline-content bg-card-bg rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   <h3>{{ edu.degree }}</h3>
                   <h4>{{ edu.institution }}</h4>
                   <p>{{ edu.description }}</p>
@@ -121,7 +123,9 @@
               >
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">{{ exp.period }}</div>
-                <div class="timeline-content card">
+                <div
+                  class="timeline-content bg-card-bg rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   <h3>{{ exp.title }}</h3>
                   <h4>{{ exp.company }}</h4>
                   <p>{{ exp.description }}</p>
@@ -147,7 +151,7 @@
 
         <div class="grid md:grid-cols-2 gap-8 mt-8 max-w-3xl mx-auto">
           <div
-            class="certification-item card p-6"
+            class="certification-item bg-card-bg rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300"
             v-for="(cert, index) in certifications"
             :key="index"
             data-aos="fade-up"
@@ -394,51 +398,101 @@ export default {
 </script>
 
 <style scoped>
+.interest-item {
+  background-color: #fdf0f5;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  text-align: center;
+}
+
+.interest-item:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
 .about-image img {
-  @apply transition-all duration-300 hover:shadow-primary/30 hover:shadow-xl;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.about-image img:hover {
+  box-shadow: 0 20px 25px -5px rgba(169, 64, 100, 0.3),
+    0 10px 10px -5px rgba(169, 64, 100, 0.3);
 }
 
 .info-item {
-  @apply mb-3;
+  margin-bottom: 0.75rem;
 }
 
 .info-label {
-  @apply font-bold text-primary mr-2;
+  font-weight: 700;
+  color: #a94064;
+  margin-right: 0.5rem;
 }
 
 .timeline {
-  @apply relative border-l-2 border-primary/30 pl-8;
+  position: relative;
+  border-left-width: 2px;
+  border-color: rgba(169, 64, 100, 0.3);
+  padding-left: 2rem;
 }
 
 .timeline-item {
-  @apply relative mb-10;
+  position: relative;
+  margin-bottom: 2.5rem;
 }
 
 .timeline-dot {
-  @apply absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-primary;
+  position: absolute;
+  left: -41px;
+  top: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  background-color: #a94064;
 }
 
 .timeline-date {
-  @apply text-sm font-medium text-primary mb-2;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #a94064;
+  margin-bottom: 0.5rem;
 }
 
 .timeline-content {
-  @apply transition-all duration-300 hover:shadow-lg;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .timeline-content h3 {
-  @apply text-xl font-bold mb-1;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
 }
 
 .timeline-content h4 {
-  @apply text-gray-400 mb-3;
-}
-
-.interest-item {
-  @apply card text-center p-6;
+  color: #a0aec0;
+  margin-bottom: 0.75rem;
 }
 
 .interest-icon {
-  @apply mb-4 p-4 rounded-full bg-primary/20 inline-block text-primary;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 9999px;
+  background-color: rgba(169, 64, 100, 0.2);
+  display: inline-block;
+  color: #a94064;
 }
 </style> 
