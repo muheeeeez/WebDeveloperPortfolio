@@ -6,8 +6,9 @@
         <div class="text-center mb-12" data-aos="fade-up">
           <h1 class="gradient-text mb-4">Technical Skills</h1>
           <p class="text-lg max-w-3xl mx-auto">
-            My technical skills and expertise that I've developed through education, personal projects, 
-            and continuous learning as a Computer Programming graduate from Algonquin College.
+            My technical skills and expertise that I've developed through
+            education, personal projects, and continuous learning as a Computer
+            Programming graduate from Algonquin College.
           </p>
           <div class="section-divider mx-auto mt-6"></div>
         </div>
@@ -25,16 +26,26 @@
               Frontend Development
               <span class="text-primary">/&gt;</span>
             </h2>
-            <p class="mb-8">Building responsive and interactive user interfaces with modern frameworks and tools.</p>
-            
+            <p class="mb-8">
+              Building responsive and interactive user interfaces with modern
+              frameworks and tools.
+            </p>
+
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-              <div v-for="(skill, index) in frontendSkills" :key="index" class="skill-item">
+              <div
+                v-for="(skill, index) in frontendSkills"
+                :key="index"
+                class="skill-item"
+              >
                 <div class="skill-logo">
                   <img :src="skill.icon" :alt="skill.name" />
                 </div>
                 <h3>{{ skill.name }}</h3>
                 <div class="skill-level">
-                  <div class="skill-bar" :style="{ width: skill.level + '%' }"></div>
+                  <div
+                    class="skill-bar"
+                    :style="{ width: skill.level + '%' }"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -47,16 +58,26 @@
               Backend Development
               <span class="text-primary">}</span>
             </h2>
-            <p class="mb-8">Building server-side applications, APIs, and database management systems.</p>
-            
+            <p class="mb-8">
+              Building server-side applications, APIs, and database management
+              systems.
+            </p>
+
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-              <div v-for="(skill, index) in backendSkills" :key="index" class="skill-item">
+              <div
+                v-for="(skill, index) in backendSkills"
+                :key="index"
+                class="skill-item"
+              >
                 <div class="skill-logo">
                   <img :src="skill.icon" :alt="skill.name" />
                 </div>
                 <h3>{{ skill.name }}</h3>
                 <div class="skill-level">
-                  <div class="skill-bar" :style="{ width: skill.level + '%' }"></div>
+                  <div
+                    class="skill-bar"
+                    :style="{ width: skill.level + '%' }"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -76,15 +97,22 @@
               Databases
             </h2>
             <p class="mb-8">Experience with relational and NoSQL databases.</p>
-            
+
             <div class="space-y-6">
-              <div v-for="(skill, index) in databaseSkills" :key="index" class="skill-item">
+              <div
+                v-for="(skill, index) in databaseSkills"
+                :key="index"
+                class="skill-item"
+              >
                 <div class="skill-logo">
                   <img :src="skill.icon" :alt="skill.name" />
                 </div>
                 <h3>{{ skill.name }}</h3>
                 <div class="skill-level">
-                  <div class="skill-bar" :style="{ width: skill.level + '%' }"></div>
+                  <div
+                    class="skill-bar"
+                    :style="{ width: skill.level + '%' }"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -96,16 +124,25 @@
               <span class="text-secondary">$ </span>
               DevOps & Tools
             </h2>
-            <p class="mb-8">Knowledge of development tools, version control, and deployment.</p>
-            
+            <p class="mb-8">
+              Knowledge of development tools, version control, and deployment.
+            </p>
+
             <div class="space-y-6">
-              <div v-for="(skill, index) in devopsSkills" :key="index" class="skill-item">
+              <div
+                v-for="(skill, index) in devopsSkills"
+                :key="index"
+                class="skill-item"
+              >
                 <div class="skill-logo">
                   <img :src="skill.icon" :alt="skill.name" />
                 </div>
                 <h3>{{ skill.name }}</h3>
                 <div class="skill-level">
-                  <div class="skill-bar" :style="{ width: skill.level + '%' }"></div>
+                  <div
+                    class="skill-bar"
+                    :style="{ width: skill.level + '%' }"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -117,13 +154,23 @@
               <span class="text-secondary">✨ </span>
               Soft Skills
             </h2>
-            <p class="mb-8">Essential professional skills for effective collaboration and problem-solving.</p>
-            
+            <p class="mb-8">
+              Essential professional skills for effective collaboration and
+              problem-solving.
+            </p>
+
             <div class="space-y-6">
-              <div v-for="(skill, index) in softSkills" :key="index" class="skill-item">
+              <div
+                v-for="(skill, index) in softSkills"
+                :key="index"
+                class="skill-item"
+              >
                 <h3>{{ skill.name }}</h3>
                 <div class="skill-level">
-                  <div class="skill-bar" :style="{ width: skill.level + '%' }"></div>
+                  <div
+                    class="skill-bar"
+                    :style="{ width: skill.level + '%' }"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -139,7 +186,8 @@
           <h2 class="mb-3">Continuous Learning</h2>
           <div class="section-divider mx-auto"></div>
           <p class="max-w-2xl mx-auto mt-4">
-            I'm constantly expanding my knowledge through courses, certifications, and self-study
+            I'm constantly expanding my knowledge through courses,
+            certifications, and self-study
           </p>
         </div>
 
@@ -148,7 +196,11 @@
           <div class="card" data-aos="fade-up">
             <h3 class="mb-4">Currently Learning</h3>
             <ul class="space-y-4">
-              <li v-for="(item, index) in currentlyLearning" :key="index" class="flex items-start">
+              <li
+                v-for="(item, index) in currentlyLearning"
+                :key="index"
+                class="flex items-start"
+              >
                 <span class="text-primary mr-2">▶</span>
                 <div>
                   <h4 class="text-lg font-medium">{{ item.name }}</h4>
@@ -162,7 +214,11 @@
           <div class="card" data-aos="fade-up" data-aos-delay="100">
             <h3 class="mb-4">Certifications</h3>
             <ul class="space-y-4">
-              <li v-for="(cert, index) in certifications" :key="index" class="flex items-start">
+              <li
+                v-for="(cert, index) in certifications"
+                :key="index"
+                class="flex items-start"
+              >
                 <span class="text-primary mr-2">🏆</span>
                 <div>
                   <h4 class="text-lg font-medium">{{ cert.name }}</h4>
@@ -181,7 +237,7 @@
         <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
           <h2 class="mb-4">Let's build something amazing together</h2>
           <p class="text-lg mb-8">
-            Interested in my skills? I'm open to job opportunities and 
+            Interested in my skills? I'm open to job opportunities and
             collaboration on interesting projects.
           </p>
           <div class="flex flex-wrap justify-center gap-4">
@@ -200,85 +256,100 @@
 
 <script>
 export default {
-  name: 'SkillsPage',
+  name: "SkillsPage",
   data() {
     return {
       frontendSkills: [
-        { name: 'HTML5', icon: './src/img/logo/html-logo.png', level: 95 },
-        { name: 'CSS3', icon: './src/img/logo/css-logo.png', level: 90 },
-        { name: 'JavaScript', icon: './src/img/logo/js-logo.png', level: 85 },
-        { name: 'TypeScript', icon: './src/img/logo/TypeScript.png', level: 75 },
-        { name: 'Vue.js', icon: './src/img/logo/Vue-logo.png', level: 80 },
-        { name: 'Nuxt.js', icon: './src/img/logo/Nuxt JS.png', level: 70 },
-        { name: 'Tailwind CSS', icon: './src/img/logo/tailwind-logo.png', level: 85 },
-        { name: 'Flutter', icon: './src/img/logo/Flutter.png', level: 60 },
-        { name: 'Ionic', icon: './src/img/logo/Ionic.png', level: 65 }
+        { name: "HTML5", icon: "./src/img/logo/html-logo.png", level: 95 },
+        { name: "CSS3", icon: "./src/img/logo/css-logo.png", level: 90 },
+        { name: "JavaScript", icon: "./src/img/logo/js-logo.png", level: 85 },
+        {
+          name: "TypeScript",
+          icon: "./src/img/logo/TypeScript.png",
+          level: 75,
+        },
+        { name: "Vue.js", icon: "./src/img/logo/Vue-logo.png", level: 80 },
+        { name: "Nuxt.js", icon: "../img/logo/Nuxt JS.png", level: 70 },
+        {
+          name: "Tailwind CSS",
+          icon: "./src/img/logo/tailwind-logo.png",
+          level: 85,
+        },
+        { name: "Flutter", icon: "./src/img/logo/Flutter.png", level: 60 },
+        { name: "Ionic", icon: "./src/img/logo/Ionic.png", level: 65 },
       ],
       backendSkills: [
-        { name: 'Node.js', icon: './src/img/logo/nodejs.png', level: 80 },
-        { name: 'Java', icon: './src/img/logo/Java-logo.png', level: 75 },
-        { name: 'PHP', icon: './src/img/logo/PHP.png', level: 70 },
-        { name: 'Express', icon: './src/img/logo/express.png', level: 75 },
-        { name: 'RESTful APIs', icon: './src/img/logo/api.png', level: 80 },
-        { name: 'Firebase', icon: './src/img/logo/firebase.png', level: 75 }
+        { name: "Node.js", icon: "./src/img/logo/nodejs.png", level: 80 },
+        { name: "Java", icon: "./src/img/logo/Java-logo.png", level: 75 },
+        { name: "PHP", icon: "./src/img/logo/PHP.png", level: 70 },
+        { name: "Express", icon: "./src/img/logo/express.png", level: 75 },
+        { name: "RESTful APIs", icon: "./src/img/logo/api.png", level: 80 },
+        { name: "Firebase", icon: "./src/img/logo/firebase.png", level: 75 },
       ],
       databaseSkills: [
-        { name: 'MySQL', icon: './src/img/logo/mysql-logo.png', level: 85 },
-        { name: 'PostgreSQL', icon: './src/img/logo/postgres-logo.png', level: 75 },
-        { name: 'MongoDB', icon: './src/img/logo/mongodb.png', level: 80 },
-        { name: 'SQL Server', icon: './src/img/logo/ssms.png', level: 70 }
+        { name: "MySQL", icon: "./src/img/logo/mysql-logo.png", level: 85 },
+        {
+          name: "PostgreSQL",
+          icon: "./src/img/logo/postgres-logo.png",
+          level: 75,
+        },
+        { name: "MongoDB", icon: "./src/img/logo/mongodb.png", level: 80 },
+        { name: "SQL Server", icon: "./src/img/logo/ssms.png", level: 70 },
       ],
       devopsSkills: [
-        { name: 'Git', icon: './src/img/logo/git-logo.png', level: 90 },
-        { name: 'GitHub', icon: './src/img/logo/github-logo.png', level: 85 },
-        { name: 'VS Code', icon: './src/img/logo/vscode-logo.png', level: 95 },
-        { name: 'Eclipse', icon: './src/img/logo/eclipse-logo.png', level: 70 }
+        { name: "Git", icon: "./src/img/logo/git-logo.png", level: 90 },
+        { name: "GitHub", icon: "./src/img/logo/github-logo.png", level: 85 },
+        { name: "VS Code", icon: "./src/img/logo/vscode-logo.png", level: 95 },
+        { name: "Eclipse", icon: "./src/img/logo/eclipse-logo.png", level: 70 },
       ],
       softSkills: [
-        { name: 'Problem Solving', level: 90 },
-        { name: 'Team Collaboration', level: 85 },
-        { name: 'Communication', level: 80 },
-        { name: 'Time Management', level: 85 },
-        { name: 'Adaptability', level: 90 }
+        { name: "Problem Solving", level: 90 },
+        { name: "Team Collaboration", level: 85 },
+        { name: "Communication", level: 80 },
+        { name: "Time Management", level: 85 },
+        { name: "Adaptability", level: 90 },
       ],
       currentlyLearning: [
-        { 
-          name: 'Cloud Computing (AWS)', 
-          description: 'Learning AWS services and cloud architecture for scalable applications.' 
+        {
+          name: "Cloud Computing (AWS)",
+          description:
+            "Learning AWS services and cloud architecture for scalable applications.",
         },
-        { 
-          name: 'Three.js & WebGL', 
-          description: 'Exploring 3D graphics programming for web applications.' 
+        {
+          name: "Three.js & WebGL",
+          description:
+            "Exploring 3D graphics programming for web applications.",
         },
-        { 
-          name: 'AI/ML Integration', 
-          description: 'Learning how to integrate AI services into web applications.' 
-        }
+        {
+          name: "AI/ML Integration",
+          description:
+            "Learning how to integrate AI services into web applications.",
+        },
       ],
       certifications: [
-        { 
-          name: 'AWS Cloud Practitioner', 
-          issuer: 'Amazon Web Services', 
-          date: '2024' 
+        {
+          name: "AWS Cloud Practitioner",
+          issuer: "Amazon Web Services",
+          date: "2024",
         },
-        { 
-          name: 'AWS AI Practitioner', 
-          issuer: 'Amazon Web Services', 
-          date: '2025' 
+        {
+          name: "AWS AI Practitioner",
+          issuer: "Amazon Web Services",
+          date: "2025",
         },
-        { 
-          name: 'Computer Programming Diploma', 
-          issuer: 'Algonquin College', 
-          date: '2024 - Present' 
+        {
+          name: "Computer Programming Diploma",
+          issuer: "Algonquin College",
+          date: "2024 - Present",
         },
-        { 
-          name: 'BSc Economics', 
-          issuer: 'Babcock University', 
-          date: '2020 - 2023' 
-        }
-      ]
+        {
+          name: "BSc Economics",
+          issuer: "Babcock University",
+          date: "2020 - 2023",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
