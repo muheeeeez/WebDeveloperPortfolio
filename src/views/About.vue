@@ -31,14 +31,13 @@
               I'm Abdul-muiz Olaleye, a passionate Full Stack Developer based in
               Ottawa, Canada. I hold a BSc in Economics from Babcock University
               and am currently pursuing a Computer Programming Diploma at
-              Algonquin College, while working as a Customer Service
-              Representative at Farm Boy.
+              Algonquin College, while working as a Supervisor at Farm Boy.
             </p>
             <p class="mb-4">
               My journey in programming began with a curiosity about how
               websites and applications work behind the scenes. This curiosity
               evolved into a passion for creating functional, efficient, and
-              user-friendly digital solutions that solve real-world problems.
+              user friendly digital solutions that solve real world problems.
             </p>
             <p class="mb-6">
               I work with a diverse tech stack including Java, which I use
@@ -348,11 +347,18 @@ export default {
       ],
       experiences: [
         {
-          period: "Sep 2024 - Present",
+          period: "May 2025 - Present",
+          title: "Supervisor",
+          company: "Farm Boy, Ottawa",
+          description:
+            "Promoted to supervise a team of associates, overseeing operations, coordinating work schedules, and ensuring exceptional customer service standards are maintained while helping to train and develop new team members.",
+        },
+        {
+          period: "Sep 2024 - May 2025",
           title: "Customer Service Representative",
           company: "Farm Boy, Ottawa",
           description:
-            "Delivering exceptional customer service in a fast-paced retail environment while developing valuable skills in communication, problem-solving, and time management.",
+            "Delivered exceptional customer service in a fast-paced retail environment while developing valuable skills in communication, problem-solving, and time management that led to promotion to a supervisory role.",
         },
         {
           period: "Apr 2024 - Aug 2024",

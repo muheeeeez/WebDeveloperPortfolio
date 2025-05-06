@@ -277,6 +277,7 @@ import gitLogo from "../img/logo/git-logo.png";
 import githubLogo from "../img/logo/github-logo.png";
 import vscodeLogo from "../img/logo/vscode-logo.png";
 import eclipseLogo from "../img/logo/eclipse-logo.png";
+import awsLogo from "../img/logo/aws-color.png";
 
 export default {
   name: "SkillsPage",
@@ -297,9 +298,10 @@ export default {
         { name: "Node.js", icon: nodejsLogo, level: 80 },
         { name: "Java", icon: javaLogo, level: 75 },
         { name: "PHP", icon: phpLogo, level: 70 },
-        { name: "Express", icon: nodejsLogo, level: 75 },
+     
         { name: "RESTful APIs", icon: nodejsLogo, level: 80 },
         { name: "Firebase", icon: firebaseLogo, level: 75 },
+        { name: "AWS Cloud Services", icon: awsLogo, level: 75 },
       ],
       databaseSkills: [
         { name: "MySQL", icon: mysqlLogo, level: 85 },
@@ -308,6 +310,7 @@ export default {
         { name: "SQL Server", icon: ssmsLogo, level: 70 },
       ],
       devopsSkills: [
+        { name: "AWS Cloud Services", icon: awsLogo, level: 75 },
         { name: "Git", icon: gitLogo, level: 90 },
         { name: "GitHub", icon: githubLogo, level: 85 },
         { name: "VS Code", icon: vscodeLogo, level: 95 },
