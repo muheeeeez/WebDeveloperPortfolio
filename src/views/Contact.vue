@@ -430,7 +430,7 @@ export default {
 }
 
 .form-input {
-  @apply block w-full rounded-md bg-dark/30 border border-gray-600 p-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300;
+  @apply block w-full rounded-md bg-dark/30 border border-gray-600 p-3  focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300;
 }
 
 .error-input {
