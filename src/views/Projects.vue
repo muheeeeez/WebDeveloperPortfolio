@@ -218,12 +218,13 @@ import deGentlesoul from "../img/degen.png";
 import dotNotation from "../img/DotNotation.png";
 import tullips from "../img/tullips.png";
 import artNFT from "../img/blockchain.png";
+import blogPlatform from "../img/blogplatform.png";
 export default {
   name: "ProjectsPage",
   data() {
     return {
       currentFilter: "all",
-      categories: ["Chrome Extension", "Web Development", "Web Design"],
+      categories: ["Chrome Extension", "Web Development", "Web Design", "Mobile Development", "School Projects"],
       projects: [
         {
           title: "HelpMeOut",
@@ -234,6 +235,15 @@ export default {
           category: "Web Development",
           demoLink: "https://help-meout.netlify.app/",
           codeLink: "https://github.com/muheeeeez/HelpMeOut-v2",
+        },
+        {
+          title: "HelpMeOut Mobile App ",
+          description: "A mobile app for the HelpMeOut web application",
+          image: helpMeOut,
+          technologies: ["Flutter", "Dart", "Firebase", "Rest API"],
+          category: "Mobile Development",
+          demoLink: "https://tinyurl.com/2absdxcl",
+          codeLink: "https://github.com/muheeeeez/HelpMeOutFlutter.git",
         },
         {
           title: "QuizMakerAI",
@@ -309,6 +319,15 @@ export default {
           category: "Web Design",
           demoLink: "https://artnftblockchain.netlify.app/",
           codeLink: "https://github.com/muheeeeez/Blockchain",
+        },
+        {
+          title: "Blog Platform",
+          description: "A blog platform that allows users to create and share blog posts",
+          image: blogPlatform,
+          technologies: ["HTML5", "CSS3", "PHP", "MySQL", "JavaScript", "Font Awesome"],
+          category: "School Projects",
+          demoLink: "https://blogplatform.kesug.com/",
+          codeLink: "https://github.com/BlogSystemProject/BlogSystem",
         },
         // {
         //   title: "Cloud Projects Coming Soon",
